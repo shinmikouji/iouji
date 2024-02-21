@@ -1,0 +1,8 @@
+@use "../global/forwards" as f;
+
+html {
+  color: f.$text;
+  font-size: f.$fz-16;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.75;
+}

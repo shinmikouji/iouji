@@ -1,0 +1,216 @@
+@use "../global/forwards" as f;
+
+.p-top-upper-part {
+  padding: 40px 0px 128px;
+}
+
+.p-top-info {
+  margin-top: 128px;
+
+  .p-top-info__subtitle {
+    text-align: center;
+  }
+
+  .p-top-info__subtitle-captionArea {
+    margin: 0 auto;
+  }
+
+  .p-top-info-area {
+    background: f.$white;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 240px;
+    margin-top: 32px;
+    padding: 40px 40px 56px;
+  }
+
+  .p-top-info__tab-area {
+
+    .p-top-info__tab-box {
+      border-bottom: 2px solid f.$border-dark-green;
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(2, 1fr);
+
+      .p-top-info__tab {
+        border: 1px solid f.$border-green;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        color: f.$primary;
+        font-weight: bold;
+        height: 48px;
+      }
+    }
+  }
+
+  .p-top-info__banner-area {
+    display: grid;
+    gap: 24px;
+
+    .p-top-info__banner {
+      border: 1px solid f.$border-green;
+      border-radius: 8px;
+      overflow: hidden;
+
+      h3 {
+        background: f.$bg-green;
+        color: f.$white;
+        font-size: f.$fz-14;
+        font-weight: bold;
+        padding: 14px 12px;
+        text-align: center;
+      }
+
+      .p-top-info__banner-inner {
+        padding: 16px 0;
+        text-align: center;
+
+        .p-top-info__banner-inner-top {
+          border-bottom: 1px solid f.$border-gray;
+          display: grid;
+          gap: 2px;
+          margin: 0 8px;
+          padding-bottom: 16px;
+        }
+
+        .p-top-info__banner-inner-middle {
+          border-bottom: 1px solid f.$border-gray;
+          margin: 0 8px;
+          padding: 16px 0;
+        }
+
+        .p-top-info__banner-inner-bottom {
+          margin-top: 18px;
+        }
+
+        .normal {
+          font-size: f.$fz-12;
+        }
+
+        .large {
+          font-size: f.$fz-24;
+          font-weight: bold;
+          font-family: "Roboto", sans-serif;
+        }
+
+        .middle {
+          font-size: f.$fz-18;
+          font-weight: bold;
+          font-family: "Roboto", sans-serif;
+        }
+
+        .middle2 {
+          font-size: f.$fz-16;
+          font-weight: bold;
+        }
+
+        .column {
+          align-items: flex-end;
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+
+          span {
+            font-size: f.$fz-12;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+// アクセス
+.p-top-access {
+  background: f.$white;
+  padding: 128px 0;
+}
+
+.p-top-access__subtitle {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.p-top-access__map {
+  margin-top: 32px;
+
+  img {
+    height: 600px;
+  }
+}
+
+.p-top-access__map-infoArea {
+  background: f.$bg-gray;
+  margin-top: 40px;
+  padding: 32px;
+}
+
+.p-top-access__map-infoArea-list {
+  display: grid;
+  gap: 12px;
+}
+
+.p-top-access__map-infoArea-item {
+  align-items: center;
+  border-bottom: 1px solid f.$border-gray;
+  display: flex;
+  gap: 8px;
+  padding: 4px 0 12px;
+
+  p {
+    font-size: f.$fz-16;
+  }
+}
+
+.p-top-access__map-infoArea__item--triangle {
+  background: f.$primary;
+  height: 12px;
+  width: 12px;
+}
+
+.p-top-access__map-vehicle {
+  border-bottom: 1px solid f.$border-gray;
+  display: grid;
+  gap: 64px;
+  margin-top: 72px;
+  padding-bottom: 120px;
+}
+
+.p-top-access__map-vehicle-item {
+  display: grid;
+  gap: 34px;
+
+  ul {
+    display: grid;
+    font-size: f.$fz-16;
+    gap: 8px;
+  }
+
+  li {
+    list-style: inside;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.p-top-access__map-vehicle-top {
+  align-items: center;
+  border-bottom: 2px solid f.$border-green;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+
+  img {
+    height: 36px;
+    width: 30px;
+  }
+
+  h3 {
+    color: f.$primary;
+    font-size: f.$fz-18;
+    font-weight: bold;
+  }
+}

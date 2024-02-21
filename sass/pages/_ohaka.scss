@@ -1,0 +1,196 @@
+@use "../global/forwards" as f;
+
+.p-ohaka {
+  padding: 120px 0;
+}
+
+.p-ohaka-features {
+
+  .p-ohaka-features__list {
+    display: grid;
+    gap: 120px;
+    margin-top: 64px;
+
+    li {
+      img {
+        height: 580px;
+        margin-bottom: 44px;
+      }
+
+      h3 {
+        align-items: center;
+        display: flex;
+        font-size: f.$fz-24;
+        font-weight: bold;
+        gap: 24px;
+
+        div {
+          align-items: center;
+          color: f.$white;
+          display: flex;
+          justify-content: center;
+          height: 48px;
+          outline: 1px solid f.$border-white;
+          outline-offset: -5px;
+          transform: rotate(45deg);
+          width: 48px;
+
+          span {
+            display: inline-block;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+
+      .green div {
+        background: f.$bg-green;
+      }
+
+      ul {
+        background: f.$bg-white;
+        display: grid;
+        gap: 8px;
+        margin-top: 32px;
+        padding: 24px;
+
+        li {
+          align-items: center;
+          display: flex;
+          gap: 8px;
+
+          &::before {
+            background: f.$bg-gold;
+            border-radius: 50%;
+            content: "";
+            height: 10px;
+            width: 10px;
+          }
+        }
+      }
+
+      .columns {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+.p-ohaka-best-image {
+  height: 737px;
+  margin-top: 120px;
+}
+
+.p-ohaka-type {
+  margin-top: 120px;
+
+  .p-ohaka-type__list {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 80px;
+
+    li {
+      img {
+        height: 300px;
+      }
+
+      h3 {
+        font-size: f.$fz-20;
+        font-weight: bold;
+        margin-top: 28px;
+        text-align: center;
+      }
+
+      ul {
+        display: grid;
+        gap: 4px;
+        margin-top: 20px;
+
+        li {
+          align-items: center;
+          display: flex;
+          gap: 8px;
+
+          &::before {
+            background: f.$bg-gold;
+            border-radius: 50%;
+            content: "";
+            height: 10px;
+            width: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.p-haka-other {
+  background: f.$bg-white;
+  margin-top: 104px;
+  padding: 64px;
+
+  .p-haka-other__list {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 48px;
+
+    li {
+      img {
+        height: 260px;
+      }
+
+      h3 {
+        font-size: f.$fz-20;
+        font-weight: bold;
+        margin: 24px 0 16px;
+        text-align: center;
+      }
+
+      p {
+        font-size: f.$fz-14;
+      }
+
+      ul li {
+        font-size: f.$fz-14;
+        padding-left: 2ex;
+        position: relative;
+
+        &::before {
+          content: '\30FB';
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.p-haka-set {
+  margin-top: 120px;
+
+  .p-haka-set__text {
+    margin-top: 48px;
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    gap: 40px;
+    margin-top: 80px;
+
+    li {
+      font-size: f.$fz-18;
+      font-weight: bold;
+      text-align: center;
+
+      img {
+        height: 300px;
+      }
+
+      h3 {
+        margin-top: 24px;
+      }
+    }
+  }
+}

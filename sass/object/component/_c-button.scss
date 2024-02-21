@@ -1,0 +1,22 @@
+@use "../../global/forwards" as f;
+
+.c-button {
+  align-items: center;
+  border-radius: 4px;
+  color: f.$white;
+  display: grid;
+  font-weight: bold;
+  height: 64px;
+  gap: 12px;
+  grid-template-columns: max-content 1fr;
+  padding: 0 28px;
+  width: 300px;
+}
+
+.c-button--gold {
+  background: f.$bg-gold;
+}
+
+.c-button--green {
+  background: f.$bg-green;
+}

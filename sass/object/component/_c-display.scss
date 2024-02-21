@@ -1,0 +1,10 @@
+@use "../../global/forwards" as f;
+
+.c-inner {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.c-bg-gray {
+  background: f.$bg-gray;
+}

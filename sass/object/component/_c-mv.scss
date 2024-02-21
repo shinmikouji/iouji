@@ -1,0 +1,16 @@
+@use "../../global/forwards" as f;
+
+.c-mv {
+  height: 500px;
+  position: relative;
+
+  h1 {
+    color: f.$white;
+    font-size: f.$fz-32;
+    font-weight: bold;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+}

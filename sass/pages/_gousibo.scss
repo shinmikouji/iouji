@@ -1,0 +1,113 @@
+@use "../global/forwards" as f;
+
+.p-gousibo {
+  padding: 120px 0;
+}
+
+.p-gousibo__list {
+  display: grid;
+  gap: 120px;
+
+  .p-gousibo__items {
+    h3 {
+      align-items: center;
+      border-bottom: 2px solid f.$border-green;
+      display: flex;
+      font-size: f.$fz-24;
+      font-weight: bold;
+      gap: 16px;
+      padding-bottom: 16px;
+
+      div {
+        align-items: center;
+        background: f.$bg-green;
+        color: f.$white;
+        display: flex;
+        justify-content: center;
+        height: 48px;
+        width: 48px;
+      }
+
+      p {
+        color: f.$primary;
+      }
+    }
+
+    .p-gousibo__items-text {
+      margin-top: 24px;
+    }
+
+    .p-gousibo__items-description-list {
+      background: f.$bg-white;
+      font-size: f.$fz-14;
+      margin-top: 32px;
+      padding: 24px;
+
+      li {
+        align-items: center;
+        display: flex;
+        gap: 12px;
+
+        &::before {
+          background: f.$bg-gold;
+          border-radius: 50%;
+          content: "";
+          height: 6px;
+          width: 6px;
+        }
+      }
+    }
+
+    dl {
+      border: 1px solid f.$border-green;
+      display: grid;
+      grid-template-columns: 232px 1fr;
+      margin-top: 32px;
+
+      dt {
+        background: f.$bg-green;
+        color: f.$white;
+        font-size: f.$fz-20;
+        font-weight: bold;
+        padding: 32px 0;
+        text-align: center;
+
+        &:not(:last-of-type) {
+          border-bottom: 1px solid f.$border-white;
+        }
+      }
+
+      dd {
+        background: f.$bg-white;
+        display: flex;
+        font-size: f.$fz-20;
+        font-weight: bold;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 32px;
+
+        &:not(:last-of-type) {
+          border-bottom: 1px solid f.$border-green;
+        }
+
+        span {
+          font-size: f.$fz-16;
+          font-weight: normal;
+        }
+
+        .red {
+          color: f.$red;
+        }
+      }
+    }
+
+    .p-gousibo__items-caption-list {
+      margin-top: 20px;
+    }
+
+    img {
+      height: 560px;
+      margin-top: 64px;
+    }
+  }
+}

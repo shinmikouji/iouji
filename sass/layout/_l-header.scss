@@ -1,0 +1,24 @@
+@use "../global/forwards" as f;
+
+.l-header {
+  align-items: center;
+  background: f.$primary;
+  color: f.$white;
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  padding: 0 64px;
+  width: 100%;
+}
+
+.l-header__title {
+  font-size: f.$fz-32;
+  font-family: "Zen Old Mincho", serif;
+}
+
+.l-header__nav {
+  ul {
+    display: flex;
+    gap: 40px;
+  }
+}

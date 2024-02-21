@@ -1,0 +1,170 @@
+@use "../global/forwards" as f;
+
+.p-kaikan {
+  padding: 120px 0;
+}
+
+.p-kaikan__text {
+  font-size: f.$fz-16;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.p-kaikan__mv {
+  margin-top: 64px;
+  width: 100%;
+
+  img {
+    height: 576px;
+  }
+}
+
+.p-kaikan-floor {
+  display: grid;
+  gap: 80px;
+  margin-top: 80px;
+
+  h2 {
+    color: f.$white;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-align: center;
+  }
+
+  .p-kaikan-floor__img {
+    display: grid;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .p-kaikan-floor__text {
+    font-size: f.$fz-16;
+    margin-top: 32px;
+  }
+
+  section:first-of-type {
+    h2 {
+      background: f.$border-green;
+    }
+
+    .p-kaikan-floor__img {
+      grid-template-columns: 550px 387px;
+    }
+  }
+
+  section:last-of-type {
+    h2 {
+      background: f.$border-gold;
+    }
+
+    .p-kaikan-floor__img {
+      grid-template-columns: 603px 333px;
+    }
+
+    .p-kaikan-floor__img--right {
+      display: grid;
+      gap: 24px;
+    }
+
+    p {}
+  }
+
+  .p-kaikan-floor-room {
+    margin-top: 72px;
+
+    ul {
+      display: grid;
+      gap: 24px;
+    }
+
+    li {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: 340px 1fr;
+
+      img {
+        height: 200px;
+        width: 100%;
+      }
+
+      h3 {
+        font-size: f.$fz-20;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: f.$fz-16;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+// 館内マップ / ご利用料金
+.p-kaikan-map {
+  padding: 120px 0;
+
+  .p-kaikan-map__image {
+    margin-top: 72px;
+    padding: 0 40px;
+  }
+
+  .p-kaikan-map__table {
+    margin-top: 80px;
+    width: 100%;
+
+    th, td {
+      border: 1px solid f.$table-border;
+      font-weight: bold;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .table-tbody--first {
+      tr:last-of-type {
+        background: f.$bg-lightGreen;
+      }
+    }
+
+    .table-tbody--second {
+      tr:last-of-type {
+        background: f.$bg-lightGold;
+      }
+    }
+
+    .table-space {
+      height: 4px;
+    }
+
+    .cell-green {
+      background: f.$bg-green;
+      color: f.$white;
+    }
+
+    .cell-gold {
+      background: f.$bg-gold;
+      color: f.$white;
+    }
+
+    .p-kaikan-map__table--bg-gray {
+      background: f.$bg-gray;
+    }
+  }
+
+  .p-kaikan-map__table-caption {
+    font-size: f.$fz-14;
+    margin-top: 16px;
+    text-align: right;
+  }
+
+  .p-kaikan-map__table-info-list {
+    list-style-type: none;
+    margin-top: 32px;
+    padding-left: 0;
+
+    li::before {
+      content: '◆';
+      margin-right: 5px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use "../global/forwards" as f;
+
+.p-soigi {
+  padding: 120px 0;
+
+  ul {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 64px;
+
+    img {
+      height: 300px;
+    }
+
+    h3 {
+      font-size: f.$fz-20;
+      font-weight: bold;
+      margin-top: 28px;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+  }
+}
+

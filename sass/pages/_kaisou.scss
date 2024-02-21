@@ -1,0 +1,85 @@
+@use "../global/forwards" as f;
+
+.p-kaisou {
+  padding: 120px 0;
+  .p-kaisou__text {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  ul {
+    display: grid;
+    gap: 12px;
+    margin-top: 64px;
+  }
+
+  li {
+    align-items: center;
+    background: f.$bg-white;
+    border: 1px solid f.$border-green;
+    border-radius: 8px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 120px 1fr;
+    padding: 24px;
+    width: 100%;
+
+    .p-kaisou-step__icon {
+      align-items: center;
+      background: f.$bg-yellow;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      height: 120px;
+      width: 120px;
+
+      img {
+        width: 48px;
+        height: 50px;
+      }
+    }
+
+    .p-kaisou-step__textArea {
+      align-items: center;
+      display: grid;
+      gap: 18px;
+
+      .p-kaisou-step__title {
+        align-items: center;
+        display: flex;
+        gap: 16px;
+
+        label {
+          align-items: center;
+          background: f.$bg-green;
+          border-radius: 12px;
+          display: flex;
+          color: f.$white;
+          font-weight: bold;
+          font-size: f.$fz-14;
+          padding: 2px 12px;
+        }
+
+        h3 {
+          color: f.$primary;
+          font-size: f.$fz-20;
+          font-weight: bold;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  .p-kaisou-step__circle {
+    display: grid;
+    gap: 6px;
+    justify-content: center;
+
+    span {
+      background: f.$bg-green;
+      border-radius: 50%;
+      height: 6px;
+      width: 6px;
+    }
+  }
+}

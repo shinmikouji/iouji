@@ -1,0 +1,109 @@
+@use "../global/forwards" as f;
+
+.p-danka {
+  padding: 120px 0;
+}
+
+.p-danka__news {
+  &>p {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .p-danka__news-event {
+    background: f.$bg-white;
+    border: 1px solid f.$border-green;
+    color: f.$primary;
+    font-weight: bold;
+    margin-top: 48px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .p-danka__news-caption-list {
+    list-style-type: none;
+    margin-top: 32px;
+    padding-left: 0;
+
+    li {
+      &::before {
+        content: '※';
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.p-danka-application {
+  margin-top: 120px;
+
+  &>p {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .p-danka-application__list {
+    display: grid;
+    gap: 64px;
+    margin-top: 64px;
+
+    h3 {
+      color: f.$primary;
+      border-bottom: 2px solid f.$border-green;
+      font-size: f.$fz-22;
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+    }
+
+    h4 {
+      color: f.$primary;
+      font-weight: bold;
+    }
+
+    li:first-of-type {
+      a {
+        margin-top: 24px;
+      }
+    }
+
+    li:nth-of-type(2) {
+      ul {
+        display: grid;
+        gap: 32px;
+
+        li:first-of-type {
+          a {
+            margin-top: 18px;
+          }
+        }
+
+        li:last-of-type {
+          p {
+            margin-top: 8px;
+          }
+
+          .p-danka-application__button-list {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(2, 300px);
+          }
+        }
+      }
+    }
+
+    li:last-of-type {
+      ul {
+        display: grid;
+        gap: 32px;
+
+        li {
+          a {
+            margin-top: 18px;
+          }
+        }
+      }
+    }
+  }
+}

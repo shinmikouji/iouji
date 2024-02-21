@@ -2,3 +2,28 @@
 // foundation
 @use "../sass/foundation/base";
 @use "../sass//foundation/reset";
+
+// layout
+@use "../sass/layout/l-header";
+@use "../sass/layout/l-footer";
+@use "../sass/layout/l-main";
+
+// object
+/* component */
+@use "../sass/object/component/c-button";
+@use "../sass/object/component/c-display";
+@use "../sass/object/component/c-subtitle";
+@use "../sass/object/component/c-mv";
+@use "../sass/object/component/c-contact";
+
+// page
+@use "../sass/pages/top";
+@use "../sass/pages/kaikan";
+@use "../sass/pages/kaisou";
+@use "../sass/pages/sougi";
+@use "../sass/pages/danka";
+@use "../sass/pages/about";
+@use "../sass/pages/noukotsudou";
+@use "../sass/pages/reiansitsu";
+@use "../sass/pages/ohaka";
+@use "../sass/pages/gousibo";

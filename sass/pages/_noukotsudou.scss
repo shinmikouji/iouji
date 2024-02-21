@@ -1,0 +1,166 @@
+@use "../global/forwards" as f;
+
+.p-noukotsudou-about {
+  padding: 120px 0;
+
+  &>p {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .p-noukotsudou-about__image {
+    margin-top: 64px;
+  }
+
+  .p-noukotsudou-about__description {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 45% 1fr;
+    margin-top: 80px;
+
+    .p-noukotsudou-about__description-images {
+      display: grid;
+      gap: 40px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+
+      li {
+        position: relative;
+
+        &::before {
+          background: f.$bg-gold;
+          content: '';
+          height: 12px;
+          position: absolute;
+          transform: rotate(45deg);
+          top: 10%;
+          width: 12px;
+        }
+
+        p {
+          padding-left: 24px;
+        }
+      }
+    }
+  }
+}
+
+.p-noukotsudou-fee {
+  padding: 120px 0;
+
+  img {
+    margin-top: 64px;
+  }
+
+  h3 {
+    border-bottom: 2px solid f.$border-green;
+    color: f.$primary;
+    font-size: f.$fz-24;
+    font-weight: bold;
+    margin-top: 56px;
+    padding-bottom: 24px;
+  }
+
+  .p-noukotsudou-fee__table {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 300px 1fr;
+    margin-top: 16px;
+
+    table {
+
+      th,
+      td {
+        font-weight: bold;
+        padding: 8px;
+        text-align: center;
+      }
+
+      thead {
+        height: 86px;
+      }
+
+      tbody tr {
+        height: 64px;
+      }
+
+      th {
+        background: f.$bg-green;
+        border: 1px solid f.$border-white;
+        color: f.$white;
+        font-size: f.$fz-16;
+      }
+
+      td {
+        border: 1px solid f.$border-green;
+      }
+
+      tr:nth-of-type(2n + 1) {
+        background: f.$bg-white;
+      }
+
+      tr:nth-of-type(2n) {
+        background: f.$bg-yellow;
+      }
+
+      .diagonal-line {
+        background-image: linear-gradient(to left top, transparent calc(50% - 0.5px), f.$border-green 50%, f.$border-green calc(50% + 0.5px), transparent calc(50% + 1px));
+      }
+
+      .with-caption {
+        position: relative;
+
+        span {
+          bottom: 5%;
+          font-size: f.$fz-12;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .p-noukotsudou-fee__table-description {
+    background: f.$bg-white;
+    font-size: f.$fz-14;
+    margin-top: 32px;
+    padding: 24px;
+
+    ul li {
+      align-items: center;
+      display: flex;
+      gap: 12px;
+    }
+
+    ul:first-of-type {
+      li {
+        &::before {
+          background: f.$bg-gold;
+          border-radius: 50%;
+          content: "";
+          height: 6px;
+          width: 6px;
+        }
+      }
+
+      li:not(:first-of-type) {
+        margin-top: 8px;
+      }
+    }
+
+    ul:last-of-type {
+      margin-top: 24px;
+
+      li:first-of-type::before {
+        content: "※1";
+      }
+
+      li:last-of-type::before {
+        content: "※2";
+      }
+    }
+  }
+}
