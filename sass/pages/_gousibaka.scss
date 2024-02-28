@@ -1,14 +1,29 @@
 @use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
 
-.p-gousibo {
-  padding: 120px 0;
+.p-gousibaka {
+  padding: 24px 0 80px;
 }
 
-.p-gousibo__list {
+.p-gousibaka__title {
+  margin-top: 80px;
+
+  @include m.mq(sp) {
+    margin-top: 32px;
+  }
+}
+
+.p-gousibaka__list {
   display: grid;
   gap: 120px;
+  margin-top: 80px;
 
-  .p-gousibo__items {
+  @include m.mq(sp) {
+    gap: 80px;
+    margin-top: 32px;
+  }
+
+  .p-gousibaka__items {
     h3 {
       align-items: center;
       border-bottom: 2px solid f.$border-green;
@@ -18,14 +33,27 @@
       gap: 16px;
       padding-bottom: 16px;
 
+      @include m.mq(sp) {
+        font-size: f.$fz-16;
+        gap: 8px;
+        padding-bottom: 8px;
+      }
+
       div {
         align-items: center;
         background: f.$bg-green;
         color: f.$white;
         display: flex;
+        font-size: f.$fz-24;
         justify-content: center;
         height: 48px;
         width: 48px;
+
+        @include m.mq(sp) {
+          font-size: f.$fz-18;
+          height: 30px;
+          width: 30px;
+        }
       }
 
       p {
@@ -33,20 +61,36 @@
       }
     }
 
-    .p-gousibo__items-text {
+    .p-gousibaka__items-text {
       margin-top: 24px;
+
+      @include m.mq(sp) {
+        margin-top: 16px;
+      }
     }
 
-    .p-gousibo__items-description-list {
+    .p-gousibaka__items-description-list {
       background: f.$bg-white;
       font-size: f.$fz-14;
       margin-top: 32px;
       padding: 24px;
 
+      @include m.mq(sp) {
+        margin-top: 24px;
+        padding: 16px;
+      }
+
       li {
         align-items: center;
         display: flex;
         gap: 12px;
+
+        @include m.mq(sp) {
+          align-items: baseline;
+          display: grid;
+          gap: 8px;
+          grid-template-columns: min-content 1fr;
+        }
 
         &::before {
           background: f.$bg-gold;
@@ -64,6 +108,11 @@
       grid-template-columns: 232px 1fr;
       margin-top: 32px;
 
+      @include m.mq(sp) {
+        grid-template-columns: 114px 1fr;
+        margin-top: 40px;
+      }
+
       dt {
         background: f.$bg-green;
         color: f.$white;
@@ -71,6 +120,14 @@
         font-weight: bold;
         padding: 32px 0;
         text-align: center;
+
+        @include m.mq(sp) {
+          padding: 24px 0;
+        }
+
+        @include m.mq(sp) {
+          font-size: f.$fz-14;
+        }
 
         &:not(:last-of-type) {
           border-bottom: 1px solid f.$border-white;
@@ -86,6 +143,11 @@
         justify-content: center;
         padding: 0 32px;
 
+        @include m.mq(sp) {
+          font-size: f.$fz-14;
+          padding: 0 16px;
+        }
+
         &:not(:last-of-type) {
           border-bottom: 1px solid f.$border-green;
         }
@@ -93,6 +155,10 @@
         span {
           font-size: f.$fz-16;
           font-weight: normal;
+
+          @include m.mq(sp) {
+            font-size: f.$fz-12;
+          }
         }
 
         .red {
@@ -101,13 +167,17 @@
       }
     }
 
-    .p-gousibo__items-caption-list {
+    .p-gousibaka__items-caption-list {
       margin-top: 20px;
     }
 
     img {
       height: 560px;
       margin-top: 64px;
+      @include m.mq(sp) {
+        height: auto;
+        margin-top: 40px;
+      }
     }
   }
 }

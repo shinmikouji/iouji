@@ -1,10 +1,15 @@
 @use "../../global/forwards" as f;
+@use "../../global/mixin/breakpoint" as m;
 
 // トップのサブタイトル
 .c-top-subtitle {
   color: f.$primary;
   font-size: f.$fz-48;
   font-family: "Roboto", sans-serif;
+  line-height: 1.35;
+  @include m.mq(sp) {
+    font-size: f.$fz-36;
+  }
 }
 
 .c-top-subtitle__captionArea {
@@ -23,6 +28,9 @@
 
 .c-top-subtitle__caption {
   font-size: f.$fz-14;
+  @include m.mq(sp) {
+    font-size: f.$fz-12;
+  }
 }
 
 // 下層ページのサブタイトル
@@ -38,6 +46,10 @@
   padding-bottom: 12px;
   position: relative;
   text-align: center;
+
+  @include m.mq(sp) {
+    font-size: f.$fz-20;
+  }
 
   &::after {
     background: f.$border-gold;
@@ -59,6 +71,10 @@
   font-weight: bold;
   justify-content: center;
   gap: 12px;
+  @include m.mq(sp) {
+    font-size: f.$fz-20;
+    gap: 8px;
+  }
 
   &::before,
   &::after {
@@ -67,5 +83,9 @@
     height: 20px;
     transform: rotate(45deg);
     width: 20px;
+    @include m.mq(sp) {
+      height: 12px;
+      width: 12px;
+    }
   }
 }

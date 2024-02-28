@@ -1,21 +1,44 @@
 @use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
 
 .p-kaikan {
-  padding: 120px 0;
+  padding: 24px 0;
+  @include m.mq(sp) {
+    padding: 24px 0 80px;
+  }
+}
+
+.p-kaikan__title {
+  margin-top: 80px;
+
+  @include m.mq(sp) {
+    margin-top: 32px;
+  }
 }
 
 .p-kaikan__text {
-  font-size: f.$fz-16;
   margin-top: 40px;
   text-align: center;
+
+  @include m.mq(sp) {
+    margin-top: 32px;
+  }
 }
 
 .p-kaikan__mv {
   margin-top: 64px;
   width: 100%;
 
+  @include m.mq(sp) {
+    margin-top: 40px;
+  }
+
   img {
     height: 576px;
+
+    @include m.mq(sp) {
+      height: auto;
+    }
   }
 }
 
@@ -27,7 +50,8 @@
   h2 {
     color: f.$white;
     font-weight: bold;
-    padding: 8px 16px;
+    line-height: 1;
+    padding: 10px 0;
     text-align: center;
   }
 
@@ -35,11 +59,19 @@
     display: grid;
     gap: 24px;
     margin-top: 40px;
+
+    @include m.mq(sp) {
+      gap: 16px;
+      margin-top: 16px;
+    }
   }
 
   .p-kaikan-floor__text {
-    font-size: f.$fz-16;
     margin-top: 32px;
+
+    @include m.mq(sp) {
+      margin-top: 16px;
+    }
   }
 
   section:first-of-type {
@@ -49,6 +81,10 @@
 
     .p-kaikan-floor__img {
       grid-template-columns: 550px 387px;
+
+      @include m.mq(sp) {
+        grid-template-columns: auto;
+      }
     }
   }
 
@@ -59,22 +95,36 @@
 
     .p-kaikan-floor__img {
       grid-template-columns: 603px 333px;
+
+      @include m.mq(sp) {
+        grid-template-columns: auto;
+      }
     }
 
     .p-kaikan-floor__img--right {
       display: grid;
       gap: 24px;
+      @include m.mq(sp) {
+        gap: 8px;
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
-
-    p {}
   }
 
   .p-kaikan-floor-room {
     margin-top: 72px;
 
+    @include m.mq(sp) {
+      margin-top: 40px;
+    }
+
     ul {
       display: grid;
       gap: 24px;
+
+      @include m.mq(sp) {
+        gap: 16px;
+      }
     }
 
     li {
@@ -82,19 +132,37 @@
       gap: 24px;
       grid-template-columns: 340px 1fr;
 
+      @include m.mq(sp) {
+        gap: 8px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       img {
         height: 200px;
         width: 100%;
+
+        @include m.mq(sp) {
+          height: auto;
+        }
       }
 
       h3 {
         font-size: f.$fz-20;
         font-weight: bold;
+        line-height: 1.4;
+
+        @include m.mq(sp) {
+          font-size: f.$fz-14;
+        }
       }
 
       p {
-        font-size: f.$fz-16;
-        margin-top: 20px;
+        margin-top: 16px;
+
+        @include m.mq(sp) {
+          font-size: f.$fz-12;
+          margin-top: 8px;
+        }
       }
     }
   }
@@ -103,20 +171,43 @@
 // 館内マップ / ご利用料金
 .p-kaikan-map {
   padding: 120px 0;
+  @include m.mq(sp) {
+    padding: 80px 16px;
+  }
 
   .p-kaikan-map__image {
     margin-top: 72px;
-    padding: 0 40px;
+    @include m.mq(sp) {
+      margin-top: 48px;
+    }
+  }
+
+  .p-kaikan-map__tableArea {
+    @include m.mq(sp) {
+      overflow: scroll;
+    }
   }
 
   .p-kaikan-map__table {
     margin-top: 80px;
     width: 100%;
+    @include m.mq(sp) {
+      margin-top: 32px;
+      width: 560px;
+    }
 
-    th, td {
+    th {
+      height: 64px;
+    }
+
+    td {
+      height: 40px;
+    }
+
+    th,
+    td {
       border: 1px solid f.$table-border;
       font-weight: bold;
-      padding: 8px;
       text-align: center;
     }
 
@@ -139,11 +230,17 @@
     .cell-green {
       background: f.$bg-green;
       color: f.$white;
+      @include m.mq(sp) {
+        padding: 0 22px;
+      }
     }
 
     .cell-gold {
       background: f.$bg-gold;
       color: f.$white;
+      @include m.mq(sp) {
+        padding: 0 22px;
+      }
     }
 
     .p-kaikan-map__table--bg-gray {
@@ -155,16 +252,33 @@
     font-size: f.$fz-14;
     margin-top: 16px;
     text-align: right;
+    @include m.mq(sp) {
+      text-align: left;
+    }
   }
 
   .p-kaikan-map__table-info-list {
-    list-style-type: none;
+    background: f.$bg-gray;
+    font-size: f.$fz-14;
     margin-top: 32px;
-    padding-left: 0;
+    padding: 24px;
 
-    li::before {
-      content: '◆';
-      margin-right: 5px;
+    li {
+      align-items: center;
+      display: grid;
+      gap: 12px;
+      grid-template-columns: min-content 1fr;
+      @include m.mq(sp) {
+        align-items: baseline;
+      }
+
+      &::before {
+        background: f.$bg-gold;
+        border-radius: 50%;
+        content: "";
+        height: 6px;
+        width: 6px;
+      }
     }
   }
 }

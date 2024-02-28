@@ -15,6 +15,7 @@
 @use "../sass/object/component/c-subtitle";
 @use "../sass/object/component/c-mv";
 @use "../sass/object/component/c-contact";
+@use "../sass/object/component/c-breadcrumb";
 
 // page
 @use "../sass/pages/top";
@@ -22,8 +23,9 @@
 @use "../sass/pages/kaisou";
 @use "../sass/pages/sougi";
 @use "../sass/pages/danka";
-@use "../sass/pages/about";
+@use "../sass/pages/info";
 @use "../sass/pages/noukotsudou";
 @use "../sass/pages/reiansitsu";
 @use "../sass/pages/ohaka";
-@use "../sass/pages/gousibo";
+@use "../sass/pages/gousibaka";
+@use "../sass/pages/news-detail";

@@ -1,0 +1,12 @@
+@use "../../global/forwards" as f;
+@use "../../global/mixin/breakpoint" as m;
+
+.c-breadcrumb {
+  @include m.mq(sp) {
+    font-size: f.$fz-12;
+  }
+
+  a {
+    color: f.$primary;
+  }
+}

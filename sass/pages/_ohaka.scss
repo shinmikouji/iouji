@@ -1,20 +1,36 @@
 @use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
 
 .p-ohaka {
-  padding: 120px 0;
+  padding: 24px 0 80px;
 }
 
 .p-ohaka-features {
+  margin-top: 80px;
+
+  @include m.mq(sp) {
+    margin-top: 32px;
+  }
 
   .p-ohaka-features__list {
     display: grid;
     gap: 120px;
     margin-top: 64px;
 
+    @include m.mq(sp) {
+      gap: 80px;
+      margin-top: 32px;
+    }
+
     li {
       img {
         height: 580px;
         margin-bottom: 44px;
+
+        @include m.mq(sp) {
+          height: auto;
+          margin-bottom: 24px;
+        }
       }
 
       h3 {
@@ -22,7 +38,12 @@
         display: flex;
         font-size: f.$fz-24;
         font-weight: bold;
-        gap: 24px;
+        gap: 16px;
+
+        @include m.mq(sp) {
+          font-size: f.$fz-16;
+          gap: 12px;
+        }
 
         div {
           align-items: center;
@@ -34,6 +55,11 @@
           outline-offset: -5px;
           transform: rotate(45deg);
           width: 48px;
+
+          @include m.mq(sp) {
+            height: 40px;
+            width: 40px;
+          }
 
           span {
             display: inline-block;
@@ -53,10 +79,22 @@
         margin-top: 32px;
         padding: 24px;
 
+        @include m.mq(sp) {
+          padding: 16px;
+          margin-top: 28px;
+        }
+
         li {
           align-items: center;
           display: flex;
           gap: 8px;
+
+          @include m.mq(sp) {
+            align-items: baseline;
+            display: grid;
+            font-size: f.$fz-16;
+            grid-template-columns: min-content 1fr;
+          }
 
           &::before {
             background: f.$bg-gold;
@@ -70,18 +108,39 @@
 
       .columns {
         grid-template-columns: repeat(2, 1fr);
+
+        @include m.mq(sp) {
+          grid-template-columns: auto;
+        }
       }
     }
   }
 }
 
 .p-ohaka-best-image {
-  height: 737px;
   margin-top: 120px;
+
+  @include m.mq(sp) {
+    margin-top: 80px;
+    overflow: scroll;
+  }
+
+  img {
+    height: 737px;
+
+    @include m.mq(sp) {
+      height: auto;
+      width: 440px;
+    }
+  }
 }
 
 .p-ohaka-type {
   margin-top: 120px;
+
+  @include m.mq(sp) {
+    margin-top: 48px;
+  }
 
   .p-ohaka-type__list {
     display: grid;
@@ -89,9 +148,18 @@
     grid-template-columns: repeat(2, 1fr);
     margin-top: 80px;
 
+    @include m.mq(sp) {
+      column-gap: 16px;
+      row-gap: 40px;
+    }
+
     li {
       img {
         height: 300px;
+
+        @include m.mq(sp) {
+          height: 111px;
+        }
       }
 
       h3 {
@@ -99,6 +167,11 @@
         font-weight: bold;
         margin-top: 28px;
         text-align: center;
+
+        @include m.mq(sp) {
+          font-size: f.$fz-16;
+          margin-top: 12px;
+        }
       }
 
       ul {
@@ -110,6 +183,12 @@
           align-items: center;
           display: flex;
           gap: 8px;
+
+          @include m.mq(sp) {
+            align-items: baseline;
+            display: grid;
+            grid-template-columns: min-content 1fr;
+          }
 
           &::before {
             background: f.$bg-gold;
@@ -129,15 +208,30 @@
   margin-top: 104px;
   padding: 64px;
 
+  @include m.mq(sp) {
+    margin-top: 80px;
+    padding: 36px 16px;
+  }
+
   .p-haka-other__list {
     display: grid;
     gap: 40px;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 48px;
 
+    @include m.mq(sp) {
+      gap: 32px;
+      grid-template-columns: auto;
+      margin-top: 24px;
+    }
+
     li {
       img {
         height: 260px;
+
+        @include m.mq(sp) {
+          height: auto;
+        }
       }
 
       h3 {
@@ -145,6 +239,11 @@
         font-weight: bold;
         margin: 24px 0 16px;
         text-align: center;
+
+        @include m.mq(sp) {
+          font-size: f.$fz-16;
+          margin: 16px 0 8px;
+        }
       }
 
       p {
@@ -166,26 +265,63 @@
   }
 }
 
+// Youtube
+.p-haka-movie {
+  margin-top: 120px;
+  text-align: center;
+  @include m.mq(sp) {
+    margin-top: 80px;
+  }
+  iframe {
+    height: 455px;
+    width: 758px;
+    @include m.mq(sp) {
+      height: 210px;
+      width: 100%;
+    }
+  }
+}
+
+// 墓終いセット
 .p-haka-set {
   margin-top: 120px;
+
+  @include m.mq(sp) {
+    margin-top: 80px;
+  }
 
   .p-haka-set__text {
     margin-top: 48px;
     text-align: center;
+
+    @include m.mq(sp) {
+      margin-top: 32px;
+    }
   }
 
   ul {
     display: flex;
     gap: 40px;
     margin-top: 80px;
+    @include m.mq(sp) {
+      gap: 2px;
+      margin-top: 40px;
+    }
 
     li {
       font-size: f.$fz-18;
       font-weight: bold;
       text-align: center;
+      @include m.mq(sp) {
+        font-size: f.$fz-16;
+      }
 
       img {
         height: 300px;
+
+        @include m.mq(sp) {
+          height: auto;
+        }
       }
 
       h3 {

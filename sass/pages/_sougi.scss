@@ -1,7 +1,16 @@
 @use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
 
 .p-soigi {
-  padding: 120px 0;
+  padding: 24px 0 80px;
+
+  .p-soigi__title {
+    margin-top: 80px;
+
+    @include m.mq(sp) {
+      margin-top: 32px;
+    }
+  }
 
   ul {
     display: grid;
@@ -9,15 +18,30 @@
     grid-template-columns: 1fr 1fr;
     margin-top: 64px;
 
+    @include m.mq(sp) {
+      grid-template-columns: auto;
+      margin-top: 32px;
+    }
+
     img {
       height: 300px;
+
+      @include m.mq(sp) {
+        height: auto;
+      }
     }
 
     h3 {
       font-size: f.$fz-20;
       font-weight: bold;
+      line-height: 1.4;
       margin-top: 28px;
       text-align: center;
+
+      @include m.mq(sp) {
+        font-size: f.$fz-16;
+        margin-top: 18px;
+      }
     }
 
     p {
@@ -25,4 +49,3 @@
     }
   }
 }
-

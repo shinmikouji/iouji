@@ -1,0 +1,47 @@
+@use "../global/forwards" as f;
+
+.p-news-detail {
+  padding: 24px 0 120px;
+
+  .p-news-detail__info {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    margin-top: 120px;
+
+    time {
+      color: f.$gray;
+      font-family: "Roboto", sans-serif;
+    }
+
+    label {
+      background: f.$bg-gold;
+      border-radius: 2px;
+      color: f.$white;
+      font-size: f.$fz-12;
+      font-weight: bold;
+      line-height: 1;
+      padding: 6px;
+    }
+  }
+
+  .p-news-detail__title {
+    font-size: f.$fz-28;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 32px;
+  }
+
+  .p-news-detail__contents {
+    border-bottom: 1px solid f.$border-gray;
+    border-top: 1px solid f.$border-gray;
+    margin-top: 40px;
+    padding: 64px 0 80px;
+
+    img {
+      height: 600px;
+      margin-top: 88px;
+      object-fit: contain;
+    }
+  }
+}

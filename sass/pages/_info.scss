@@ -1,11 +1,20 @@
 @use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
 
-.p-about {
-  padding: 120px 0;
+.p-info {
+  padding: 24px 0 200px;
+  @include m.mq(sp) {
+    padding: 24px 0 80px;
+  }
 }
 
-.p-about-iouji {
-  .p-about-iouji__text {
+.p-info-iouji {
+  margin-top: 80px;
+  @include m.mq(sp) {
+    margin-top: 32px;
+  }
+
+  .p-info-iouji__text {
     margin-top: 40px;
     text-align: center;
   }
@@ -14,6 +23,10 @@
     display: grid;
     margin-top: 72px;
     gap: 24px;
+
+    @include m.mq(sp) {
+      margin-top: 64px;
+    }
   }
 
   li {
@@ -24,6 +37,12 @@
     grid-template-columns: 1fr 300px;
     padding-bottom: 20px;
 
+    @include m.mq(sp) {
+      gap: 32px;
+      grid-template-columns: auto;
+      padding-bottom: 24px;
+    }
+
     h3 {
       align-items: center;
       display: flex;
@@ -31,14 +50,20 @@
       font-weight: bold;
       gap: 8px;
 
+      @include m.mq(sp) {
+        display: grid;
+        font-size: f.$fz-16;
+        grid-template-columns: min-content 1fr;
+      }
+
       &::before {
         background: f.$bg-gold;
         border-radius: 50%;
         content: "";
         display: block;
-        height: 10px;
+        height: 12px;
         position: relative;
-        width: 10px;
+        width: 12px;
       }
     }
 
@@ -49,24 +74,57 @@
     p:last-of-type {
       margin-top: 24px;
     }
+
+    img {
+      @include m.mq(sp) {
+        height: 310px;
+        padding: 0 5%;
+      }
+    }
   }
 }
 
-.p-about__image {
+// Youtube
+.p-info__movie {
+  iframe {
+    height: 570px;
+    width: 100%;
+    @include m.mq(sp) {
+      height: 330px;
+    }
+  }
+}
+
+// 背景画像
+.p-info__image {
   height: 570px;
   width: 100%;
+
+  @include m.mq(sp) {
+    height: 330px;
+  }
 }
 
 // 天台宗とは
-.p-about-tendaisyu {
+.p-info-tendaisyu {
   padding: 120px 0;
+
+  @include m.mq(sp) {
+    padding: 80px 0;
+  }
 
   ul {
     background: f.$bg-white;
+    border-radius: 8px;
     display: grid;
     gap: 24px;
     margin-top: 64px;
     padding: 80px;
+
+    @include m.mq(sp) {
+      margin-top: 32px;
+      padding: 28px 16px;
+    }
 
     li {
       border-bottom: 1px solid f.$border-gray;
@@ -79,6 +137,10 @@
       font-size: f.$fz-20;
       font-weight: bold;
       gap: 6px;
+
+      @include m.mq(sp) {
+        font-size: f.$fz-16;
+      }
 
       &::before {
         background: f.$bg-gold;
@@ -96,24 +158,44 @@
 }
 
 // 年間行事
-.p-about-event {
+.p-info-event {
   padding: 120px 0;
 
-  .p-about-event__text {
-    margin-top: 40px;
-    text-align: center;
+  @include m.mq(sp) {
+    padding: 80px 0;
   }
 
-  .p-about-event_list {
+  .p-info-event__text {
+    margin-top: 40px;
+    text-align: center;
+
+    @include m.mq(sp) {
+      margin-top: 32px;
+    }
+  }
+
+  .p-info-event_list {
+    column-gap: 40px;
     display: grid;
-    gap: 40px;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 72px;
+    row-gap: 64px;
+
+    @include m.mq(sp) {
+      column-gap: 0px;
+      grid-template-columns: auto;
+      margin-top: 56px;
+      row-gap: 40px;
+    }
 
     li {
       img {
         border-radius: 4px;
         height: 300px;
+
+        @include m.mq(sp) {
+          height: 225px;
+        }
       }
 
       h3 {
@@ -121,8 +203,13 @@
         display: flex;
         font-size: f.$fz-20;
         font-weight: bold;
+        line-height: 1;
         gap: 8px;
         margin-top: 24px;
+
+        @include m.mq(sp) {
+          font-size: f.$fz-16;
+        }
 
         &::before {
           background: f.$bg-green;
@@ -143,18 +230,30 @@
   }
 }
 
-.p-about-event-banners {
+.p-info-event-banners {
   padding: 120px 0;
 
-  .p-about-event-banners__list {
+  @include m.mq(sp) {
+    padding: 80px 0;
+  }
+
+  .p-info-event-banners__list {
     display: grid;
     gap: 64px;
 
-    .p-about-event-banners__items {
+    @include m.mq(sp) {
+      gap: 32px;
+    }
+
+    .p-info-event-banners__items {
       background: f.$bg-white;
       border: 1px solid f.$border-dark-gray;
       border-radius: 8px;
       padding: 48px 40px;
+
+      @include m.mq(sp) {
+        padding: 24px 20px;
+      }
 
       h3 {
         align-items: center;
@@ -163,31 +262,58 @@
         font-weight: bold;
         gap: 10px;
 
+        @include m.mq(sp) {
+          font-size: f.$fz-16;
+          gap: 8px;
+        }
+
         &::before {
           background: f.$bg-green;
           content: "";
           height: 30px;
           width: 4px;
+
+          @include m.mq(sp) {
+            height: 24px;
+          }
         }
       }
 
       p {
         margin-top: 24px;
 
+        @include m.mq(sp) {
+          margin-top: 16px;
+        }
+
         &:last-of-type {
           font-size: f.$fz-14;
           margin-top: 20px;
+
+          @include m.mq(sp) {
+            font-size: f.$fz-12;
+            margin-top: 32px;
+          }
         }
       }
 
-      .p-about-event-banners__list-images {
+      .p-info-event-banners__list-images {
         display: grid;
         gap: 32px;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 48px;
+        @include m.mq(sp) {
+          gap: 16px;
+          grid-template-columns: auto;
+          margin-top: 32px;
+        }
 
         img {
           height: 274px;
+          @include m.mq(sp) {
+            height: 200px;
+            width: 100%;
+          }
         }
       }
     }
@@ -196,6 +322,10 @@
       display: grid;
       gap: 32px;
       grid-template-columns: 1fr 260px;
+
+      @include m.mq(sp) {
+        grid-template-columns: auto;
+      }
     }
   }
 }

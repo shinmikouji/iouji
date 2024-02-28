@@ -1,8 +1,12 @@
 @use "../../global/forwards" as f;
+@use "../../global/mixin/breakpoint" as m;
 
 .c-mv {
   height: 500px;
   position: relative;
+  @include m.mq(sp) {
+    height: 240px;
+  }
 
   h1 {
     color: f.$white;
@@ -12,5 +16,12 @@
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
+    @include m.mq(sp) {
+      font-size: f.$fz-20;
+    }
+  }
+
+  img {
+    height: 100%;
   }
 }

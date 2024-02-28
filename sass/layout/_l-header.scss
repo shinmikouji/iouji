@@ -1,4 +1,5 @@
 @use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
 
 .l-header {
   align-items: center;
@@ -9,16 +10,126 @@
   height: 72px;
   padding: 0 64px;
   width: 100%;
+
+  @include m.mq(sp) {
+    height: 56px;
+    padding: 0 16px;
+  }
+}
+
+.l-header.fixed {
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 99;
 }
 
 .l-header__title {
   font-size: f.$fz-32;
   font-family: "Zen Old Mincho", serif;
+
+  @include m.mq(sp) {
+    font-size: f.$fz-22;
+  }
 }
 
 .l-header__nav {
   ul {
     display: flex;
     gap: 40px;
+  }
+}
+
+// ハンバーガーメニュー
+.l-header__icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 24px;
+  justify-content: space-between;
+  width: 32px;
+
+  .line {
+    height: 1px;
+    background: f.$bg-white;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+}
+
+// ハンバーガーメニューがアクティブ
+.l-header__icon.active {
+  .line:first-of-type {
+    transform: rotate(45deg) translate(10px, 6px);
+  }
+
+  .line:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .line:last-of-type {
+    transform: rotate(-45deg) translate(10px, -6px);
+  }
+}
+
+// ハンバーガーメニューが開いた時にスクロールを無効に
+body.menu-open {
+  overflow: hidden;
+}
+
+// spのヘッダーナビ
+.l-header__nav--sp {
+  display: none;
+}
+
+.l-header__nav--sp.active {
+  background-image: url("../images/header/header-menu-sp.jpg");
+  background-size: cover;
+  display: block;
+  height: calc(100vh - 56px);
+  left: 0;
+  margin-top: 56px;
+  padding: 28px 28px 45px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+
+  .l-header__navArea--sp {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+
+    .list {
+      display: grid;
+      gap: 24px;
+
+      li {
+        h4 {
+          align-items: center;
+          color: f.$primary;
+          display: grid;
+          font-size: f.$fz-16;
+          font-weight: bold;
+          gap: 8px;
+          grid-template-columns: min-content 1fr;
+          position: relative;
+
+          &::before {
+            background: f.$bg-gold;
+            border-radius: 50%;
+            content: "";
+            height: 10px;
+            width: 10px;
+          }
+        }
+
+        ul {
+          display: grid;
+          gap: 8px;
+          margin-top: 12px;
+        }
+      }
+    }
   }
 }

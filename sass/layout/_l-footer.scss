@@ -1,10 +1,16 @@
 @use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
 
 .l-footer {
-  background-image: url("../../images/footer/bg-footer.jpg");
+  background-image: url("../images/footer/bg-footer.jpg");
   background-size: cover;
   color: f.$white;
   padding: 128px 0px 80px;
+
+  @include m.mq(sp) {
+    background-image: url("../images/footer/bg-footer-sp.jpg");
+    padding: 80px 16px 64px;
+  }
 }
 
 .l-footer-top {
@@ -13,6 +19,13 @@
   justify-content: space-between;
   margin: 0 8%;
   padding-bottom: 96px;
+
+  @include m.mq(sp) {
+    flex-direction: column;
+    gap: 80px;
+    padding: 0 16px 80px;
+    margin: 0 auto;
+  }
 }
 
 .l-footer--left {
@@ -22,15 +35,25 @@
 
   .l-footer__address--first {
     margin-top: 24px;
+    @include m.mq(sp) {
+      font-size: f.$fz-12;
+    }
   }
 
   .l-footer__address--secound {
     margin-top: 28px;
+    @include m.mq(sp) {
+      font-size: f.$fz-12;
+      margin-top: 24px;
+    }
   }
 
   .l-footer__number {
     font-size: f.$fz-24;
     margin-top: 56px;
+    @include m.mq(sp) {
+      margin-top: 28px;
+    }
   }
 }
 
@@ -40,6 +63,10 @@
   justify-content: space-between;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 80px;
+  @include m.mq(sp) {
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   li {
     h3 {
@@ -58,4 +85,7 @@
   font-size: f.$fz-12;
   margin-top: 40px;
   text-align: center;
+  @include m.mq(sp) {
+    margin-top: 64px;
+  }
 }

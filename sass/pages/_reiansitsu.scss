@@ -1,13 +1,24 @@
 @use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
 
 .p-reiansitsu--top {
-  padding: 120px 0;
+  padding: 24px 0;
 }
 
 .p-reiansitsu-type {
+  margin-top: 80px;
+
+  @include m.mq(sp) {
+    margin-top: 32px;
+  }
+
   &>p {
     margin-top: 40px;
     text-align: center;
+
+    @include m.mq(sp) {
+      margin-top: 32px;
+    }
   }
 
   .p-reiansitsu-room__list {
@@ -16,8 +27,18 @@
     grid-template-columns: repeat(2, 1fr);
     margin-top: 72px;
 
+    @include m.mq(sp) {
+      gap: 32px;
+      grid-template-columns: auto;
+      margin-top: 40px;
+    }
+
     li p {
       margin-top: 24px;
+
+      @include m.mq(sp) {
+        margin-top: 16px;
+      }
     }
   }
 }
@@ -25,17 +46,34 @@
 .p-reiansitsu-eternity {
   margin-top: 128px;
 
+  @include m.mq(sp) {
+    margin-top: 80px;
+  }
+
   &>img {
     height: 540px;
     margin-top: 40px;
+
+    @include m.mq(sp) {
+      height: auto;
+      margin-top: 32px;
+    }
   }
 
   .p-reiansitsu-eternity__title {
     margin-top: 64px;
     text-align: center;
 
+    @include m.mq(sp) {
+      margin-top: 32px;
+    }
+
     h3 {
       font-size: f.$fz-24;
+
+      @include m.mq(sp) {
+        font-size: f.$fz-16;
+      }
     }
 
     p {
@@ -48,10 +86,20 @@
     gap: 48px;
     margin-top: 80px;
 
+    @include m.mq(sp) {
+      gap: 32px;
+      margin-top: 64px;
+    }
+
     li {
       display: grid;
       gap: 32px;
       grid-template-columns: repeat(2, 1fr);
+
+      @include m.mq(sp) {
+        gap: 16px;
+        grid-template-columns: auto;
+      }
 
       p:last-of-type {
         margin-top: 16px;
@@ -63,17 +111,30 @@
 .p-reiansitsu__image--first {
   height: 570px;
   width: 100%;
+
+  @include m.mq(sp) {
+    height: auto;
+  }
 }
 
 .p-reiansitsu-features {
   padding: 120px 0;
 
+  @include m.mq(sp) {
+    padding: 80px 0;
+  }
+
   .p-reiansitsu-features__list {
     background: f.$bg-white;
+    border-radius: 8px;
     display: grid;
     gap: 24px;
     margin-top: 64px;
     padding: 80px;
+
+    @include m.mq(sp) {
+      padding: 24px 16px;
+    }
 
     .p-reiansitsu-features__items {
       border-bottom: 1px solid f.$border-gray;
@@ -81,6 +142,10 @@
       gap: 32px;
       grid-template-columns: 1fr 290px;
       padding-bottom: 24px;
+
+      @include m.mq(sp) {
+        grid-template-columns: auto;
+      }
     }
 
     .p-reiansitsu-features__items--left {
@@ -91,6 +156,11 @@
         font-weight: bold;
         gap: 24px;
 
+        @include m.mq(sp) {
+          font-size: f.$fz-16;
+          gap: 16px;
+        }
+
         div {
           align-items: center;
           color: f.$white;
@@ -99,6 +169,12 @@
           height: 48px;
           transform: rotate(45deg);
           width: 48px;
+
+          @include m.mq(sp) {
+            font-size: f.$fz-20;
+            height: 30px;
+            width: 30px;
+          }
 
           span {
             display: inline-block;
@@ -117,13 +193,20 @@
 
       .p-reiansitsu-features__items-text {
         margin-top: 24px;
+        @include m.mq(sp) {
+          margin-top: 18px;
+        }
       }
 
       .p-reiansitsu-features__items-text-list {
         border: 1px solid f.$border-green;
+        border-radius: 4px;
         font-size: f.$fz-14;
         margin-top: 32px;
         padding: 16px;
+        @include m.mq(sp) {
+          margin-top: 16px;
+        }
       }
     }
 

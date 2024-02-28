@@ -1,11 +1,28 @@
 @use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
 
+// お墓のないお墓
 .p-noukotsudou-about {
-  padding: 120px 0;
+  padding: 24px 0 120px;
+  @include m.mq(sp) {
+    padding: 24px 0 80px;
+  }
 
-  &>p {
+  .p-noukotsudou__title {
+    margin-top: 80px;
+
+    @include m.mq(sp) {
+      margin-top: 32px;
+    }
+  }
+
+  .p-noukotsudou-about__text {
     margin-top: 40px;
     text-align: center;
+
+    @include m.mq(sp) {
+      margin-top: 32px;
+    }
   }
 
   .p-noukotsudou-about__image {
@@ -18,15 +35,29 @@
     grid-template-columns: 45% 1fr;
     margin-top: 80px;
 
+    @include m.mq(sp) {
+      grid-template-columns: auto;
+      margin-top: 12px;
+    }
+
     .p-noukotsudou-about__description-images {
       display: grid;
       gap: 40px;
+
+      @include m.mq(sp) {
+        gap: 8px;
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     ul {
       display: flex;
       flex-direction: column;
       gap: 48px;
+
+      @include m.mq(sp) {
+        gap: 24px;
+      }
 
       li {
         position: relative;
@@ -49,11 +80,31 @@
   }
 }
 
+// Youtube
+.p-noukotsudou-movie {
+  iframe {
+    height: 600px;
+    width: 100%;
+    @include m.mq(sp) {
+      height: 300px;
+    }
+  }
+}
+
+// ご利用料金について
 .p-noukotsudou-fee {
   padding: 120px 0;
 
+  @include m.mq(sp) {
+    padding: 80px 0;
+  }
+
   img {
     margin-top: 64px;
+
+    @include m.mq(sp) {
+      margin-top: 32px;
+    }
   }
 
   h3 {
@@ -61,8 +112,14 @@
     color: f.$primary;
     font-size: f.$fz-24;
     font-weight: bold;
+    line-height: 1;
     margin-top: 56px;
     padding-bottom: 24px;
+
+    @include m.mq(sp) {
+      font-size: f.$fz-16;
+      padding-bottom: 16px;
+    }
   }
 
   .p-noukotsudou-fee__table {
@@ -70,6 +127,11 @@
     gap: 32px;
     grid-template-columns: 300px 1fr;
     margin-top: 16px;
+
+    @include m.mq(sp) {
+      gap: 24px;
+      grid-template-columns: auto;
+    }
 
     table {
 
@@ -129,10 +191,20 @@
     margin-top: 32px;
     padding: 24px;
 
+    @include m.mq(sp) {
+      padding: 16px;
+    }
+
     ul li {
       align-items: center;
       display: flex;
       gap: 12px;
+
+      @include m.mq(sp) {
+        align-items: baseline;
+        display: grid;
+        grid-template-columns: min-content 1fr;
+      }
     }
 
     ul:first-of-type {
@@ -145,14 +217,14 @@
           width: 6px;
         }
       }
-
-      li:not(:first-of-type) {
-        margin-top: 8px;
-      }
     }
 
     ul:last-of-type {
       margin-top: 24px;
+
+      @include m.mq(sp) {
+        margin-top: 12px;
+      }
 
       li:first-of-type::before {
         content: "※1";

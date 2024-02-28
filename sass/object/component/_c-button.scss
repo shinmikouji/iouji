@@ -1,4 +1,5 @@
 @use "../../global/forwards" as f;
+@use "../../global/mixin/breakpoint" as m;
 
 .c-button {
   align-items: center;
@@ -11,6 +12,10 @@
   grid-template-columns: max-content 1fr;
   padding: 0 28px;
   width: 300px;
+
+  @include m.mq(sp) {
+    font-size: f.$fz-16;
+  }
 }
 
 .c-button--gold {
