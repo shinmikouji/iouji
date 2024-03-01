@@ -20,8 +20,52 @@
 
 .c-button--gold {
   background: f.$bg-gold;
+
+  &:hover {
+    background: f.$hover-gold;
+    transition: 0.2s;
+  }
 }
 
 .c-button--green {
   background: f.$bg-green;
+
+  &:hover {
+    background: f.$hover-green;
+    transition: 0.2s;
+  }
+}
+
+.c-button-info {
+  align-items: center;
+  background: f.$bg-green;
+  border-radius: 30px;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  margin-top: 32px;
+  padding: 9px 0;
+  width: 100%;
+
+  span {
+    color: f.$white;
+    font-size: f.$fz-14;
+    line-height: 1.5;
+    padding-right: 20px;
+    position: relative;
+    text-align: center;
+
+    &:after {
+      border-right: 2px solid f.$white;
+      border-bottom: 2px solid f.$white;
+      content: "";
+      display: block;
+      height: 10px;
+      right: 0;
+      position: absolute;
+      transform: translateY(-50%) rotate(-45deg);
+      top: 50%;
+      width: 10px;
+    }
+  }
 }

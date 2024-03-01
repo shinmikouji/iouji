@@ -129,6 +129,7 @@
   }
 }
 
+// インフォメーション
 .p-top-info {
   .p-top-info__subtitle {
     text-align: center;
@@ -227,11 +228,20 @@
         p {
           margin-top: 12px;
 
+          &:hover {
+            color: f.$primary;
+            transition: 0.2s;
+          }
+
           a {
             display: block;
           }
         }
       }
+    }
+
+    .p-top-info__tab-button-archive {
+      width: 100%;
     }
   }
 }

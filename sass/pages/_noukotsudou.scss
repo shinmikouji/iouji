@@ -169,6 +169,14 @@
         background: f.$bg-yellow;
       }
 
+      &:first-of-type {
+        @include m.mq(sp) {
+          th, td {
+            width: 50%;
+          }
+        }
+      }
+
       .diagonal-line {
         background-image: linear-gradient(to left top, transparent calc(50% - 0.5px), f.$border-green 50%, f.$border-green calc(50% + 0.5px), transparent calc(50% + 1px));
       }

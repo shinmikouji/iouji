@@ -35,6 +35,7 @@
 
   .l-footer__address--first {
     margin-top: 24px;
+
     @include m.mq(sp) {
       font-size: f.$fz-12;
     }
@@ -42,6 +43,7 @@
 
   .l-footer__address--secound {
     margin-top: 28px;
+
     @include m.mq(sp) {
       font-size: f.$fz-12;
       margin-top: 24px;
@@ -51,6 +53,7 @@
   .l-footer__number {
     font-size: f.$fz-24;
     margin-top: 56px;
+
     @include m.mq(sp) {
       margin-top: 28px;
     }
@@ -63,6 +66,7 @@
   justify-content: space-between;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 80px;
+
   @include m.mq(sp) {
     gap: 32px;
     grid-template-columns: repeat(2, 1fr);
@@ -70,13 +74,24 @@
 
   li {
     h3 {
+      display: inline-block;
       font-weight: bold;
+      transition: 0.2s;
+
+      &:hover {
+        color: f.$hover-green;
+      }
     }
 
     ul {
       display: grid;
       gap: 16px;
       margin-top: 16px;
+
+      li a:hover {
+        opacity: 0.5;
+        transition: 0.2s;
+      }
     }
   }
 }
@@ -85,6 +100,7 @@
   font-size: f.$fz-12;
   margin-top: 40px;
   text-align: center;
+
   @include m.mq(sp) {
     margin-top: 64px;
   }

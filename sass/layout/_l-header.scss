@@ -36,7 +36,28 @@
 .l-header__nav {
   ul {
     display: flex;
+    font-size: f.$fz-14;
     gap: 40px;
+
+    li a {
+      position: relative;
+      text-decoration: none;
+
+      &::before {
+        background: f.$white;
+        bottom: -4px;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        transition: width 0.3s ease;
+        width: 0;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
   }
 }
 

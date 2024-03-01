@@ -1,0 +1,97 @@
+@use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
+
+.p-archive__title {
+  margin-top: 80px;
+
+  @include m.mq(sp) {
+    margin-top: 56px;
+  }
+}
+
+.p-archive {
+  margin: 32px auto 120px;
+
+  @include m.mq(sp) {
+    margin: 32px auto 80px;
+  }
+
+  .p-archive__list {
+    display: grid;
+    gap: 12px;
+
+    @include m.mq(sp) {
+      gap: 8px;
+    }
+  }
+
+  .p-archive__items {
+    border-bottom: 1px solid f.$border-gray;
+    display: flex;
+    padding: 0px 4px;
+
+    .p-archive__link {
+      align-items: center;
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 120px 1fr;
+      padding: 12px 5px;
+      width: 100%;
+
+      @include m.mq(sp) {
+        gap: 12px;
+        grid-template-columns: 110px 1fr;
+        padding: 8px 4px;
+      }
+
+      .p-archive__items-label {
+        align-items: center;
+        border-radius: 3px;
+        color: f.$white;
+        display: flex;
+        justify-content: center;
+        line-height: 1.5;
+        padding: 12px 5px;
+        font-size: f.$fz-14;
+
+        @include m.mq(sp) {
+          font-size: f.$fz-12;
+        }
+      }
+
+      .p-archive__items-textArea {
+        display: grid;
+        gap: 8px;
+
+        @include m.mq(sp) {
+          gap: 6px;
+        }
+
+        time {
+          color: f.$gray;
+          font-size: f.$fz-12;
+          line-height: 1;
+
+          @include m.mq(sp) {
+            font-size: f.$fz-11;
+          }
+        }
+
+        .p-archive__items-title {
+          color: #193547;
+          display: -webkit-box;
+          font-size: f.$fz-16;
+          line-height: 1.2;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+
+          @include m.mq(sp) {
+            font-size: f.$fz-14;
+            -webkit-line-clamp: 2;
+          }
+        }
+      }
+    }
+  }
+}

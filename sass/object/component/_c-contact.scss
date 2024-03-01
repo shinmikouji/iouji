@@ -150,6 +150,11 @@
     .c-contact__info-mail {
       .c-contact__info-mail-button {
         background: f.$bg-gold;
+
+        &:hover {
+          background: f.$hover-green;
+          transition: 0.2s;
+        }
       }
     }
   }
@@ -172,6 +177,11 @@
     .c-contact__info-mail {
       .c-contact__info-mail-button {
         background: f.$bg-green;
+
+        &:hover {
+          background: f.$hover-green;
+          transition: 0.2s;
+        }
       }
     }
   }

@@ -1,3 +1,4 @@
+<?php /* Template Name:top  */ ?>
 <?php get_header(); ?>
 <main>
   <div class="p-top-slider-area">
@@ -140,6 +141,9 @@
                 <?php endwhile; ?>
               <?php endif; ?>
             </ul>
+            <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-top-info__tab-button-archive c-button-info">
+              <span>インフォメーション一覧はこちら</span>
+            </a>
           </div>
           <div class="p-top-info__banner-area c-display--pc">
             <div class="p-top-info__banner">

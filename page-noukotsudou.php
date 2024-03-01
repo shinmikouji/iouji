@@ -53,7 +53,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="c-display--pc">
               <td colspan="2" class="diagonal-line"></td>
             </tr>
             <tr>
@@ -167,15 +167,15 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/contact/tel.svg" alt="電話のアイコン">
             <p>メモリアル・ハート&nbsp;電話番号</p>
           </div>
-          <p class="c-contact__info-tel-number">
+          <a class="c-contact__info-tel-number" href="tel:0120-148-408">
             0120-148-408
-          </p>
+          </a>
           <p class="c-contact__info-tel-description">
             （フリーダイヤル / 受付時間 09:00-17:00 ）
           </p>
-          <p class="c-contact__info-tel-number">
+          <a class="c-contact__info-tel-number" href="tel:03-5360-1753">
             03-5360-1753
-          </p>
+          </a>
           <p class="c-contact__info-tel-description">
             （受付時間 09:00-17:00 ）
           </p>

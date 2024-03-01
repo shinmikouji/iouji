@@ -266,9 +266,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/contact/tel.svg" alt="電話のアイコン">
             <p>お電話からのお問い合わせ</p>
           </div>
-          <p class="c-contact__info-tel-number">
-            042-377-1568
-          </p>
+          <a href="tel:042-377-1568" class="c-contact__info-tel-number">042-377-1568</a>
           <p class="c-contact__info-tel-description">
             （受付時間 9:00-17:00 ）
           </p>
