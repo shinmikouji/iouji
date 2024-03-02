@@ -114,10 +114,13 @@
       }
 
       dt {
+        align-items: center;
         background: f.$bg-green;
         color: f.$white;
+        display: flex;
         font-size: f.$fz-20;
         font-weight: bold;
+        justify-content: center;
         padding: 32px 0;
         text-align: center;
 
@@ -145,7 +148,7 @@
 
         @include m.mq(sp) {
           font-size: f.$fz-14;
-          padding: 0 16px;
+          padding: 4px 16px;
         }
 
         &:not(:last-of-type) {
@@ -174,6 +177,7 @@
     img {
       height: 560px;
       margin-top: 64px;
+
       @include m.mq(sp) {
         height: auto;
         margin-top: 40px;

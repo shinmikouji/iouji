@@ -213,7 +213,9 @@
         <ul class="p-top-access__map-infoArea-list">
           <li class="p-top-access__map-infoArea-item">
             <div class="p-top-access__map-infoArea__item--triangle"></div>
-            <p>〒206-0801 東京都稲城市大丸1417<br class="c-display--sp">（Googleマップで見る）</p>
+            <p>〒206-0801 東京都稲城市大丸1417<br class="c-display--sp">
+              <a href="https://maps.app.goo.gl/7kzSgdZ1sy17Ur92A" class="p-top-access__map-infoArea-item-link" target="_blank">（Googleマップで見る）</a>
+            </p>
           </li>
           <li class="p-top-access__map-infoArea-item">
             <div class="p-top-access__map-infoArea__item--triangle"></div>

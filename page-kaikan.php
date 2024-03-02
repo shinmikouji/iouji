@@ -12,8 +12,7 @@
         <a href="<?php echo esc_url(home_url('/')); ?>">TOP</a>&nbsp;＞&nbsp;会館紹介
       </div>
       <h2 class="c-subtitle--underline p-kaikan__title" id="about">会館について</h2>
-      <p class="p-kaikan__text"> 地域の皆様、業者様、団体様、様々な用途に合わせ、便利にお使い いただける会館です。ホールや法要室をはじめ様々なお部屋を
-        完備 し、少人数でも大人数でもどなた様でも多目的な用途によって組み合わせ可能な使いやすい施設となっております。</p>
+      <p class="p-kaikan__text">地域の皆様、業者様、団体様、様々な用途に合わせ、便利にお使い いただける会館です。ホールや法要室をはじめ様々なお部屋を完備し、少人数でも大人数でもどなた様でも多目的な用途によって組み合わせ可能な使いやすい施設となっております。</p>
       <div class="p-kaikan__mv">
         <img src="<?php echo get_template_directory_uri(); ?>/images/kaikan/kaikan-main.jpg" alt="会館の外からの写真">
       </div>
@@ -56,8 +55,7 @@
             <div class="p-kaikan-floor__img--right">
               <img src="<?php echo get_template_directory_uri(); ?>/images/kaikan/kaikan-06.jpg" alt="法要室Dの画像" class="c-display--pc">
               <img src="<?php echo get_template_directory_uri(); ?>/images/kaikan/kaikan-sp-06.jpg" alt="法要室Dの画像" class="c-display--sp">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/kaikan/kaikan-07.jpg" alt="法要室Eの画像"
-              class="c-display--pc">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/kaikan/kaikan-07.jpg" alt="法要室Eの画像" class="c-display--pc">
               <img src="<?php echo get_template_directory_uri(); ?>/images/kaikan/kaikan-sp-07.jpg" alt="法要室Eの画像" class="c-display--sp">
             </div>
           </div>

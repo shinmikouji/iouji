@@ -3,6 +3,7 @@
 
 .p-info {
   padding: 24px 0 200px;
+
   @include m.mq(sp) {
     padding: 24px 0 80px;
   }
@@ -10,11 +11,13 @@
 
 .p-info-iouji {
   margin-top: 80px;
+
   @include m.mq(sp) {
     margin-top: 32px;
   }
 
   .p-info-iouji__text {
+    line-height: 2;
     margin-top: 40px;
     text-align: center;
   }
@@ -89,6 +92,7 @@
   iframe {
     height: 570px;
     width: 100%;
+
     @include m.mq(sp) {
       height: 330px;
     }
@@ -102,6 +106,9 @@
 
   @include m.mq(sp) {
     height: 330px;
+    img {
+      height: 330px;
+    }
   }
 }
 
@@ -162,16 +169,8 @@
   padding: 120px 0;
 
   @include m.mq(sp) {
-    padding: 80px 0;
-  }
-
-  .p-info-event__text {
-    margin-top: 40px;
-    text-align: center;
-
-    @include m.mq(sp) {
-      margin-top: 32px;
-    }
+    background: f.$bg-gray;
+    padding: 0 0 80px;
   }
 
   .p-info-event_list {
@@ -285,15 +284,15 @@
         @include m.mq(sp) {
           margin-top: 16px;
         }
+      }
 
-        &:last-of-type {
-          font-size: f.$fz-14;
-          margin-top: 20px;
+      .p-info-event-banners__items-text--last {
+        font-size: f.$fz-14;
+        margin-top: 20px;
 
-          @include m.mq(sp) {
-            font-size: f.$fz-12;
-            margin-top: 32px;
-          }
+        @include m.mq(sp) {
+          font-size: f.$fz-12;
+          margin-top: 32px;
         }
       }
 
@@ -302,6 +301,7 @@
         gap: 32px;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 48px;
+
         @include m.mq(sp) {
           gap: 16px;
           grid-template-columns: auto;
@@ -310,6 +310,7 @@
 
         img {
           height: 274px;
+
           @include m.mq(sp) {
             height: 200px;
             width: 100%;

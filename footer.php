@@ -10,8 +10,8 @@
         東京都稲城市大丸1417
       </p>
       <div class="l-footer__number">
-        <p>電話：042-377-1568</p>
-        <p>FAX ：042-377-1053</p>
+        <p>電話：<a href="tel:042-377-1568">042-377-1568</a></p>
+        <p>FAX ：<a href="tel:042-377-1053">042-377-1053</a></p>
       </div>
     </div>
     <div class="l-footer--right">

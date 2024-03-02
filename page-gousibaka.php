@@ -64,11 +64,11 @@
           <dl>
             <dt>13年プラン</dt>
             <dd>
-              <p>170,000円<span class="red">（非課税、管理費含む）</span></p>
+              <p>170,000円<br class="c-display--sp"><span class="red">（非課税、管理費含む）</span></p>
             </dd>
             <dt>単年プラン</dt>
             <dd>
-              <p>30,000円 / 年<span class="red">（非課税、管理費含む）</span></p>
+              <p>30,000円 / 年<br class="c-display--sp"><span class="red">（非課税、管理費含む）</span></p>
             </dd>
           </dl>
           <img src="<?php echo get_template_directory_uri(); ?>/images/gousibaka/gousibaka-02.jpg" alt="合同墓（屋外納骨堂）の画像">
@@ -89,7 +89,7 @@
           <dl>
             <dt>樹木葬利用料</dt>
             <dd>
-              <p>300,000円<span class="red">（非課税、管理費含む）</span></p>
+              <p>300,000円<br class="c-display--sp"><span class="red">（非課税、管理費含む）</span></p>
             </dd>
             <dt>粉骨手数料</dt>
             <dd>
@@ -102,7 +102,7 @@
             </dd>
             <dt>合計</dt>
             <dd>
-              <p>343,000円<span class="red">（非課税、管理費含む）</span></p>
+              <p>343,000円<br class="c-display--sp"><span class="red">（非課税、管理費含む）</span></p>
               <span>※上記に追加で法要代のご料金がかかります。</span>
             </dd>
           </dl>

@@ -27,6 +27,10 @@
 
   .p-noukotsudou-about__image {
     margin-top: 64px;
+
+    @include m.mq(sp) {
+      margin-top: 40px;
+    }
   }
 
   .p-noukotsudou-about__description {

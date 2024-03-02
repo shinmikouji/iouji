@@ -17,8 +17,7 @@
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/reiansitsu/reiansitsu-01.jpg" alt="ペルソナの部屋">
             <p>
-              簡単なご葬儀もできる個室に安置可能な一体用の霊安室 です。<br />
-              この部屋でご遺体の保存からご葬儀、出棺まで綺麗なお姿でご対応可能できます。少人数でのご葬儀が可能です。</p>
+              簡単なご葬儀もできる個室に安置可能な一体用の霊安室 です。この部屋でご遺体の保存からご葬儀、出棺まで綺麗なお姿でご対応可能できます。少人数でのご葬儀が可能です。</p>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/reiansitsu/reiansitsu-02.jpg" alt="集合部屋の部屋">

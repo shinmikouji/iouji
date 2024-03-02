@@ -155,7 +155,6 @@
   <section class="p-info-event">
     <div class="c-inner">
       <h2 class="c-subtitle--underline" id="nenkangyouji">年間行事</h2>
-      <p class="p-info-event__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
       <ul class="p-info-event_list">
         <li>
           <img src="<?php echo get_template_directory_uri(); ?>/images/info/info-event-01.jpg" alt="修正会の画像">
@@ -243,7 +242,7 @@
               これまでに開催しました『お寺 deゆうれい噺 』『不安奇異夜話 』には、 大勢の 方の ご来場 をいただきました。公演の収益金は 『災害支援チャリティー 』と して 天台宗 【一隅を照らす 運動 】総本部
               地球救援 事務局 に寄付させていただいております。この 地球 救援募金は、直接あるいは国連・ユニセフ・日本赤十字社・ＮＧＯ（民間海外援助団体）など信頼できる団体を通じて確実に支援先へお届けしています 。
             </p>
-            <p>
+            <p class="p-info-event-banners__items-text--last">
               ※「一隅を照らす」とは、天台宗開祖・最澄の精神を現代に生かしていく、信仰と実践によって一人ひとりが心豊かに平和で明るい世の中を共に築いていこうとする社会啓発運動です。
             </p>
           </div>

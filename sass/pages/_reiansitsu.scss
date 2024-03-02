@@ -2,7 +2,10 @@
 @use "../global/mixin/breakpoint" as m;
 
 .p-reiansitsu--top {
-  padding: 24px 0;
+  padding: 24px 0 120px;
+  @include m.mq(sp) {
+    padding: 24px 0 80px;
+  }
 }
 
 .p-reiansitsu-type {
@@ -133,6 +136,7 @@
     padding: 80px;
 
     @include m.mq(sp) {
+      margin-top: 32px;
       padding: 24px 16px;
     }
 

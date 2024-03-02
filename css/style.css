@@ -5,7 +5,6 @@ html {
   font-size: 16px;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.75;
-  letter-spacing: 0.05em;
 }
 @media screen and (max-width: 959px) {
   html {
@@ -327,7 +326,7 @@ body.menu-open {
   height: 64px;
   gap: 12px;
   grid-template-columns: max-content 1fr;
-  padding: 0 28px;
+  padding: 0 18px 0 28px;
   width: 300px;
 }
 @media screen and (max-width: 959px) {
@@ -362,6 +361,10 @@ body.menu-open {
   margin-top: 32px;
   padding: 9px 0;
   width: 100%;
+}
+.c-button-info:hover {
+  background: #327B2E;
+  transition: 0.2s;
 }
 .c-button-info span {
   color: #FFF;
@@ -677,7 +680,7 @@ body.menu-open {
   background: #C4A231;
 }
 .c-contact--green .c-contact__info .c-contact__info-mail .c-contact__info-mail-button:hover {
-  background: #327B2E;
+  background: #E0B524;
   transition: 0.2s;
 }
 
@@ -828,7 +831,7 @@ body.menu-open {
 @media screen and (max-width: 959px) {
   .p-top-upper-part {
     background: #FFF;
-    padding: 80px 0;
+    padding: 40px 0 72px;
   }
 }
 
@@ -1086,6 +1089,10 @@ body.menu-open {
   display: flex;
   gap: 8px;
   padding: 4px 0 12px;
+}
+.p-top-access__map-infoArea-item .p-top-access__map-infoArea-item-link {
+  color: #3D603B;
+  text-decoration: underline;
 }
 @media screen and (max-width: 959px) {
   .p-top-access__map-infoArea-item {
@@ -1816,6 +1823,7 @@ body.menu-open {
   }
 }
 .p-info-iouji .p-info-iouji__text {
+  line-height: 2;
   margin-top: 40px;
   text-align: center;
 }
@@ -1898,6 +1906,9 @@ body.menu-open {
   .p-info__image {
     height: 330px;
   }
+  .p-info__image img {
+    height: 330px;
+  }
 }
 
 .p-info-tendaisyu {
@@ -1954,16 +1965,8 @@ body.menu-open {
 }
 @media screen and (max-width: 959px) {
   .p-info-event {
-    padding: 80px 0;
-  }
-}
-.p-info-event .p-info-event__text {
-  margin-top: 40px;
-  text-align: center;
-}
-@media screen and (max-width: 959px) {
-  .p-info-event .p-info-event__text {
-    margin-top: 32px;
+    background: #F5F5F5;
+    padding: 0 0 80px;
   }
 }
 .p-info-event .p-info-event_list {
@@ -2077,12 +2080,12 @@ body.menu-open {
     margin-top: 16px;
   }
 }
-.p-info-event-banners .p-info-event-banners__list .p-info-event-banners__items p:last-of-type {
+.p-info-event-banners .p-info-event-banners__list .p-info-event-banners__items .p-info-event-banners__items-text--last {
   font-size: 14px;
   margin-top: 20px;
 }
 @media screen and (max-width: 959px) {
-  .p-info-event-banners .p-info-event-banners__list .p-info-event-banners__items p:last-of-type {
+  .p-info-event-banners .p-info-event-banners__list .p-info-event-banners__items .p-info-event-banners__items-text--last {
     font-size: 12px;
     margin-top: 32px;
   }
@@ -2147,6 +2150,11 @@ body.menu-open {
 }
 .p-noukotsudou-about .p-noukotsudou-about__image {
   margin-top: 64px;
+}
+@media screen and (max-width: 959px) {
+  .p-noukotsudou-about .p-noukotsudou-about__image {
+    margin-top: 40px;
+  }
 }
 .p-noukotsudou-about .p-noukotsudou-about__description {
   display: grid;
@@ -2338,7 +2346,12 @@ body.menu-open {
 }
 
 .p-reiansitsu--top {
-  padding: 24px 0;
+  padding: 24px 0 120px;
+}
+@media screen and (max-width: 959px) {
+  .p-reiansitsu--top {
+    padding: 24px 0 80px;
+  }
 }
 
 .p-reiansitsu-type {
@@ -2472,6 +2485,7 @@ body.menu-open {
 }
 @media screen and (max-width: 959px) {
   .p-reiansitsu-features .p-reiansitsu-features__list {
+    margin-top: 32px;
     padding: 24px 16px;
   }
 }
@@ -2991,10 +3005,13 @@ body.menu-open {
   }
 }
 .p-gousibaka__list .p-gousibaka__items dl dt {
+  align-items: center;
   background: #3D603B;
   color: #FFF;
+  display: flex;
   font-size: 20px;
   font-weight: bold;
+  justify-content: center;
   padding: 32px 0;
   text-align: center;
 }
@@ -3023,7 +3040,7 @@ body.menu-open {
 @media screen and (max-width: 959px) {
   .p-gousibaka__list .p-gousibaka__items dl dd {
     font-size: 14px;
-    padding: 0 16px;
+    padding: 4px 16px;
   }
 }
 .p-gousibaka__list .p-gousibaka__items dl dd:not(:last-of-type) {
