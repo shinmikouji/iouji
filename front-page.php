@@ -5,27 +5,27 @@
     <div class="swiper slider">
       <ul class="swiper-wrapper">
         <li class="swiper-slide">
-          <a href="" class="top-swiper-slide__link">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-01.jpg" alt="" class="c-display--pc">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-01-sp.jpg" alt="" class="c-display--sp">
+          <a href="<?php echo esc_url(home_url('/info')); ?>" class="top-swiper-slide__link">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-01.jpg" alt="知るページのMV" class="c-display--pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-01-sp.jpg" alt="知るページのMV" class="c-display--sp">
           </a>
         </li>
         <li class="swiper-slide">
-          <a href="" class="top-swiper-slide__link">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-02.jpg" alt="" class="c-display--pc">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-02-sp.jpg" alt="" class="c-display--sp">
+          <a href="<?php echo esc_url(home_url('/ohaka')); ?>" class="top-swiper-slide__link">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-02.jpg" alt="お墓ページのMV" class="c-display--pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-02-sp.jpg" alt="お墓ページのMV" class="c-display--sp">
           </a>
         </li>
         <li class="swiper-slide">
-          <a href="" class="top-swiper-slide__link">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-03.jpg" alt="" class="c-display--pc">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-03-sp.jpg" alt="" class="c-display--sp">
+          <a href="<?php echo esc_url(home_url('/noukotsudou')); ?>" class="top-swiper-slide__link">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-03.jpg" alt="納骨堂ページのMV" class="c-display--pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-03-sp.jpg" alt="納骨堂ページのMV" class="c-display--sp">
           </a>
         </li>
         <li class="swiper-slide">
-          <a href="" class="top-swiper-slide__link">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-04.jpg" alt="" class="c-display--pc">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-04-sp.jpg" alt="" class="c-display--sp">
+          <a href="<?php echo esc_url(home_url('/reiansitsu')); ?>" class="top-swiper-slide__link">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-04.jpg" alt="霊安室ページのMV" class="c-display--pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-04-sp.jpg" alt="霊安室ページのMV" class="c-display--sp">
           </a>
         </li>
       </ul>
@@ -35,22 +35,22 @@
     <div class="swiper slider-thumbnail">
       <ul class="swiper-wrapper">
         <li class="swiper-slide">
-          <a href="">
+          <a href="<?php echo esc_url(home_url('/info')); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-01.jpg" alt="">
           </a>
         </li>
         <li class="swiper-slide">
-          <a href="">
+          <a href="<?php echo esc_url(home_url('/ohaka')); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-02.jpg" alt="">
           </a>
         </li>
         <li class="swiper-slide">
-          <a href="">
+          <a href="<?php echo esc_url(home_url('/noukotsudou')); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-03.jpg" alt="">
           </a>
         </li>
         <li class="swiper-slide">
-          <a href="">
+          <a href="<?php echo esc_url(home_url('/reiansitsu')); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-04.jpg" alt="">
           </a>
         </li>

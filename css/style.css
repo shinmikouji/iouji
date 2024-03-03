@@ -3103,6 +3103,10 @@ body.menu-open {
   display: flex;
   padding: 0px 4px;
 }
+.p-archive .p-archive__items:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+}
 .p-archive .p-archive__items .p-archive__link {
   align-items: center;
   display: grid;
@@ -3153,7 +3157,6 @@ body.menu-open {
   }
 }
 .p-archive .p-archive__items .p-archive__link .p-archive__items-textArea .p-archive__items-title {
-  color: #193547;
   display: -webkit-box;
   font-size: 16px;
   line-height: 1.2;

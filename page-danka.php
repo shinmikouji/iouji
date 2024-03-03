@@ -37,7 +37,7 @@
             <h3>塔婆のみ申込</h3>
             <p>塔婆のみの申し込みは以下のメールフォームからお願いいたします。<br />
               （リンク先が表示されない場合はページを再読み込みしてください。）</p>
-            <a href="" class="c-button c-button--gold">
+            <a href="mailto:oka@iouji.com" class="c-button c-button--gold">
               <img src="<?php echo get_template_directory_uri(); ?>/images/danka/mail.svg" alt="メールのアイコン">
               <span>メールフォームから申し込む</span>
             </a>
@@ -47,7 +47,7 @@
             <ul>
               <li>
                 <h4>■メールフォームからお申し込みの方はこちら</h4>
-                <a href="" class="c-button c-button--gold">
+                <a href="mailto:oka@iouji.com" class="c-button c-button--gold">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/danka/mail.svg" alt="メールのアイコン">
                   <span>メールフォームから申し込む</span>
                 </a>
@@ -56,23 +56,23 @@
                 <h4>■FAXでお申し込みの方はこちら</h4>
                 <p>※お塔婆を6本以上お申込の方は、PDF申込用紙に記入の上、FAXにて送信してください。</p>
                 <div class="p-danka-application__button-list">
-                  <a href="" class="c-button c-button--green">
+                  <a href="<?php echo get_template_directory_uri(); ?>/pdf/お彼岸会用  お塔婆申込ＰＤＦファイル.pdf" class="c-button c-button--green" target="_blank">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
                     <span>お彼岸会用 お塔婆申込PDF</span>
                   </a>
-                  <a href="" class="c-button c-button--green">
+                  <a href="<?php echo get_template_directory_uri(); ?>/pdf/お施餓鬼用  お塔婆申込ＰＤＦファイル.pdf" class="c-button c-button--green" target="_blank">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
                     <span>お施餓鬼用 お塔婆申込PDF</span>
                   </a>
-                  <a href="" class="c-button c-button--green">
+                  <a href="<?php echo get_template_directory_uri(); ?>/pdf/お盆法要用  お塔婆申込ＰＤＦ.pdf" class="c-button c-button--green" target="_blank">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
                     <span>お盆法要用 お塔婆申込PDF</span>
                   </a>
-                  <a href="" class="c-button c-button--green">
+                  <a href="<?php echo get_template_directory_uri(); ?>/pdf/新盆法要用  お塔婆申込ＰＤＦファイル.pdf" class="c-button c-button--green" target="_blank">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
                     <span>新盆法要用 お塔婆申込PDF</span>
                   </a>
-                  <a href="" class="c-button c-button--green">
+                  <a href="<?php echo get_template_directory_uri(); ?>/pdf/8月13日新盆特別法要用  お塔婆申込ＰＤＦファイル.pdf" class="c-button c-button--green" target="_blank">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
                     <span>8月13日新盆特別法要用<br />
                       お塔婆申込PDF</span>
@@ -86,7 +86,7 @@
             <ul>
               <li>
                 <h4>■メールフォームからお申し込みの方はこちら</h4>
-                <a href="" class="c-button c-button--gold">
+                <a href="mailto:oka@iouji.com" class="c-button c-button--gold">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/danka/mail.svg" alt="メールのアイコン">
                   <span>メールフォームから申し込む</span>
                 </a>
@@ -94,7 +94,7 @@
               <li>
                 <h4>■FAXでお申し込みの方はこちら</h4>
                 <p>※お塔婆を6本以上お申込の方は、PDF申込用紙に記入の上、FAXにて送信してください。</p>
-                <a href="" class="c-button c-button--green">
+                <a href="<?php echo get_template_directory_uri(); ?>/pdf/法事用  お塔婆申込ＰＤＦファイル.pdf" class="c-button c-button--green" target="_blank">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
                   <span>法事用 お塔婆申込PDF</span>
                 </a>

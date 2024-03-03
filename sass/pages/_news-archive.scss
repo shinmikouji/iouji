@@ -30,6 +30,11 @@
     display: flex;
     padding: 0px 4px;
 
+    &:hover {
+      opacity: 0.5;
+      transition: 0.2s;
+    }
+
     .p-archive__link {
       align-items: center;
       display: grid;
@@ -78,7 +83,6 @@
         }
 
         .p-archive__items-title {
-          color: #193547;
           display: -webkit-box;
           font-size: f.$fz-16;
           line-height: 1.2;
