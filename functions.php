@@ -1,4 +1,7 @@
 <?php
+add_action('init', function() {
+  add_theme_support('title-tag');
+});
 function enqueue_head() {
   wp_enqueue_style('style_name', get_template_directory_uri() . '/css/style.css', array(), '1.0.0');
   wp_enqueue_script('script_jquery', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true);
