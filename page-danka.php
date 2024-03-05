@@ -37,7 +37,7 @@
             <h3>塔婆のみ申込</h3>
             <p>塔婆のみの申し込みは以下のメールフォームからお願いいたします。<br />
               （リンク先が表示されない場合はページを再読み込みしてください。）</p>
-            <a href="mailto:oka@iouji.com" class="c-button c-button--gold">
+            <a href="http://koumyou.sakura.ne.jp/iouji/touba/index.html" class="c-button c-button--gold">
               <img src="<?php echo get_template_directory_uri(); ?>/images/danka/mail.svg" alt="メールのアイコン">
               <span>メールフォームから申し込む</span>
             </a>
