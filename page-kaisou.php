@@ -49,9 +49,7 @@
               <label for="">STEP02</label>
               <h3>改葬許可申請書を発行してもらう。</h3>
             </div>
-            <p>
-              ＜受け入れ証明書＞を持参し、菩提寺のある市区町村役場へ行き、＜改葬許可申請書＞を発行してもらう。<br />（1体に1通）
-            </p>
+            <p>＜受け入れ証明書＞を持参し、菩提寺のある市区町村役場へ行き、＜改葬許可申請書＞を発行してもらう。<br />（1体に1通）</p>
           </div>
         </li>
         <div class="p-kaisou-step__circle">
@@ -68,9 +66,7 @@
               <label for="">STEP03</label>
               <h3>申請書に捺印してもらう。</h3>
             </div>
-            <p>
-              ＜改葬許可申請書＞に死亡者の氏名･死亡年月日等を記入し、現在埋葬している墓地の管理者（菩提寺の住職等）に捺印してもらう。
-            </p>
+            <p>＜改葬許可申請書＞に死亡者の氏名･死亡年月日等を記入し、現在埋葬している墓地の管理者（菩提寺の住職等）に捺印してもらう。</p>
           </div>
         </li>
         <div class="p-kaisou-step__circle">
@@ -87,9 +83,7 @@
               <label for="">STEP04</label>
               <h3>市区町村役場に提出。</h3>
             </div>
-            <p>
-              捺印された＜改葬許可申請書＞を菩提寺のある市区町村役場に提出し＜改葬許可証＞を発行してもらう。
-            </p>
+            <p>捺印された＜改葬許可申請書＞を菩提寺のある市区町村役場に提出し＜改葬許可証＞を発行してもらう。</p>
           </div>
         </li>
         <div class="p-kaisou-step__circle">
@@ -106,9 +100,7 @@
               <label for="">STEP05</label>
               <h3>閉眼供養をする。</h3>
             </div>
-            <p>
-              墓前にて菩提寺の住職に｢閉眼供養｣（お墓から魂を抜く供養）をしてもらう。
-            </p>
+            <p>墓前にて菩提寺の住職に｢閉眼供養｣（お墓から魂を抜く供養）をしてもらう。</p>
           </div>
         </li>
         <div class="p-kaisou-step__circle">
@@ -125,9 +117,7 @@
               <label for="">STEP06</label>
               <h3>石材店に依頼する。</h3>
             </div>
-            <p>
-              遺骨をお墓より取り出す。
-            </p>
+            <p>遺骨をお墓より取り出す。</p>
           </div>
         </li>
         <div class="p-kaisou-step__circle">
@@ -144,9 +134,7 @@
               <label for="">STEP07</label>
               <h3>改葬許可証を提出する。</h3>
             </div>
-            <p>
-              新しく入る墓地･霊園の管理者に＜改葬許可証＞を提出する。
-            </p>
+            <p>新しく入る墓地･霊園の管理者に＜改葬許可証＞を提出する。</p>
           </div>
         </li>
         <div class="p-kaisou-step__circle">
@@ -163,9 +151,7 @@
               <label for="">STEP08</label>
               <h3>開眼供養をする。</h3>
             </div>
-            <p>
-              新しく入る墓前にて｢開眼供養｣（お墓に魂を入れる供養）をしてもらい、納骨する。
-            </p>
+            <p>新しく入る墓前にて｢開眼供養｣（お墓に魂を入れる供養）をしてもらい、納骨する。</p>
           </div>
         </li>
       </ul>
@@ -200,8 +186,8 @@
         </div>
         <div class="c-contact__info-mail">
           <div class="c-contact__info-title">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコンme-runoaikonn">
-            <p>メモリアル・ハート メールアドレス</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコン">
+            <p>メモリアル・ハート&nbsp;メールアドレス</p>
           </div>
           <a href="mailto:info@m-heat.co.jp" class="c-contact__info-mail-button">
             info@m-heat.co.jp

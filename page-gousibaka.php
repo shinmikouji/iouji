@@ -140,8 +140,8 @@
         </div>
         <div class="c-contact__info-mail">
           <div class="c-contact__info-title">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコンme-runoaikonn">
-            <p>メモリアル・ハート メールアドレス</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコン">
+            <p>メモリアル・ハート&nbsp;メールアドレス</p>
           </div>
           <a href="mailto:info@m-heat.co.jp" class="c-contact__info-mail-button">
             info@m-heat.co.jp

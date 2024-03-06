@@ -126,8 +126,7 @@
             <p>樹木葬とは許可を得た区画（墓所）に遺骨を埋葬し、墓石などを設けずに樹木（花木）を墓碑として自然と共生する魅力ある新しいお墓のかたちです。</p>
             <ul>
               <li>お遺骨を粉骨し、紙のパイルに入れて御埋葬いたします</li>
-              <li>樹木葬に咲いてあるお花は春と秋にそれぞれ入れ替えるため
-                四季を感じれます</li>
+              <li>樹木葬に咲いているお花は春と秋にそれぞれ入れ替えるため四季を感じられます</li>
               <li>注意点としてはご遺骨をお戻しすることはできません</li>
             </ul>
           </li>
@@ -197,8 +196,8 @@
         </div>
         <div class="c-contact__info-mail">
           <div class="c-contact__info-title">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコンme-runoaikonn">
-            <p>メモリアル・ハート メールアドレス</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコン">
+            <p>メモリアル・ハート&nbsp;メールアドレス</p>
           </div>
           <a href="mailto:info@m-heat.co.jp" class="c-contact__info-mail-button">
             info@m-heat.co.jp

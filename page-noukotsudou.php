@@ -24,7 +24,7 @@
             <p>33年間ご安置の後、永代供養させていただきます。また、途中での永代供養もご相談ください。</p>
           </li>
           <li>
-            <p>お墓参りのお時間は365日可能、参拝時間は9時から16時まで。また、最上段（6段目）以外はご面会可能。通常は施錠してありますのでご面会の際はスタッフにお声掛けください。</p>
+            <p>お墓参りのお時間は365日可能、参拝時間は9時から16時まで。また、最上段（0段目）以外はご面会可能。通常は施錠してありますのでご面会の際はスタッフにお声掛けください。</p>
           </li>
           <li>
             <p>一柱用と二柱用とございます。※一柱用とは７寸のお骨壷一つと小さなお写真とお位牌、又はお供物等々も一緒に入れることが可能です。</p>
@@ -92,7 +92,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>6段目（最上段）</td>
+              <td>0段目（最上段）</td>
               <td class="diagonal-line"></td>
               <td class="with-caption">￥400,000<span>※1</span></td>
               <td rowspan="5" class="diagonal-line c-display--pc"></td>
@@ -182,8 +182,8 @@
         </div>
         <div class="c-contact__info-mail">
           <div class="c-contact__info-title">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコンme-runoaikonn">
-            <p>メモリアル・ハート メールアドレス</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコン">
+            <p>メモリアル・ハート&nbsp;メールアドレス</p>
           </div>
           <a href="mailto:info@m-heat.co.jp" class="c-contact__info-mail-button">
             info@m-heat.co.jp

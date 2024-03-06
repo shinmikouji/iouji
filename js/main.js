@@ -41,7 +41,6 @@ jQuery(function ($) {
       $("#important").css("display", "grid");
       $("#eventButton").removeClass("active");
       importantButton.addClass("active");
-      console.log(123);
     }
     if (tabName === "event") {
       $("#important").css("display", "none");

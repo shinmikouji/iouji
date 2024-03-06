@@ -17,7 +17,7 @@
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/reiansitsu/reiansitsu-01.jpg" alt="ペルソナの部屋">
             <p>
-              簡単なご葬儀もできる個室に安置可能な一体用の霊安室 です。この部屋でご遺体の保存からご葬儀、出棺まで綺麗なお姿でお預かりご対応いたします。少人数でのご葬儀が可能です。</p>
+              簡単なご葬儀もできる個室に安置可能な一体用の霊安室です。この部屋でご遺体の保存からご葬儀、出棺まで綺麗なお姿でお預かりご対応いたします。少人数でのご葬儀が可能です。</p>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/reiansitsu/reiansitsu-02.jpg" alt="集合部屋の部屋">
@@ -128,7 +128,7 @@
               <p>キレイな状態</p>
             </h3>
             <p class="p-reiansitsu-features__items-text">
-              通常1 ヵ月程度、ご遺体を綺麗な状態で保管できます。<br />
+              通常1ヵ月程度、ご遺体を綺麗な状態で保管できます。<br />
               ご遺体は凍結しませんので、いつまでもお亡くなりになった時と同じ状態で、安らかに安置できます。
             </p>
           </div>
@@ -202,7 +202,7 @@
         </div>
         <div class="c-contact__info-mail">
           <div class="c-contact__info-title">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコンme-runoaikonn">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコン">
             <p>メールからのお問い合わせ</p>
           </div>
           <a href="mailto:oka@iouji.com" class="c-contact__info-mail-button">

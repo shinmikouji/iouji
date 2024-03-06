@@ -3,6 +3,7 @@
 
 .p-reiansitsu--top {
   padding: 24px 0 120px;
+
   @include m.mq(sp) {
     padding: 24px 0 80px;
   }
@@ -34,6 +35,14 @@
       gap: 32px;
       grid-template-columns: auto;
       margin-top: 40px;
+    }
+
+    li img {
+      height: 300px;
+
+      @include m.mq(sp) {
+        height: auto;
+      }
     }
 
     li p {
@@ -197,6 +206,7 @@
 
       .p-reiansitsu-features__items-text {
         margin-top: 24px;
+
         @include m.mq(sp) {
           margin-top: 18px;
         }
@@ -208,6 +218,7 @@
         font-size: f.$fz-14;
         margin-top: 32px;
         padding: 16px;
+
         @include m.mq(sp) {
           margin-top: 16px;
         }

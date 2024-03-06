@@ -18,15 +18,10 @@
           <p>8月13日 当寺本堂にてお盆法要開始</p>
         </div>
         <ul class="p-danka__news-caption-list">
-          <li>7月と8月両方行います。
-          </li>
-          <li>法要終了後、盆提灯に灯をお入れになり、各家ご先祖をお迎え願います。盆提灯は寺にて用意いたします。
-          </li>
-          <li>盆塔婆（1本3000円）を申し込まれる方は所定の用紙に記入の上、FAXまたは郵送ください。メールフォーム
-            もご利用いただけます。
-          </li>
-          <li>棚経（寺より各家へ出向き、読経すること）は失礼いたします。
-          </li>
+          <li>7月と8月両方行います。</li>
+          <li>法要終了後、盆提灯に灯をお入れになり、各家ご先祖をお迎え願います。盆提灯は寺にて用意いたします。</li>
+          <li>盆塔婆（1本3000円）を申し込まれる方は所定の用紙に記入の上、FAXまたは郵送ください。メールフォームもご利用いただけます。</li>
+          <li>棚経（寺より各家へ出向き、読経すること）は失礼いたします。</li>
         </ul>
       </div>
       <div class="p-danka-application" id="application">
@@ -58,24 +53,23 @@
                 <div class="p-danka-application__button-list">
                   <a href="<?php echo get_template_directory_uri(); ?>/pdf/お彼岸会用  お塔婆申込ＰＤＦファイル.pdf" class="c-button c-button--green" target="_blank">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
-                    <span>お彼岸会用 お塔婆申込PDF</span>
+                    <span>お彼岸会用&nbsp;お塔婆申込PDF</span>
                   </a>
                   <a href="<?php echo get_template_directory_uri(); ?>/pdf/お施餓鬼用  お塔婆申込ＰＤＦファイル.pdf" class="c-button c-button--green" target="_blank">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
-                    <span>お施餓鬼用 お塔婆申込PDF</span>
+                    <span>お施餓鬼用&nbsp;お塔婆申込PDF</span>
                   </a>
                   <a href="<?php echo get_template_directory_uri(); ?>/pdf/お盆法要用  お塔婆申込ＰＤＦ.pdf" class="c-button c-button--green" target="_blank">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
-                    <span>お盆法要用 お塔婆申込PDF</span>
+                    <span>お盆法要用&nbsp;お塔婆申込PDF</span>
                   </a>
                   <a href="<?php echo get_template_directory_uri(); ?>/pdf/新盆法要用  お塔婆申込ＰＤＦファイル.pdf" class="c-button c-button--green" target="_blank">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
-                    <span>新盆法要用 お塔婆申込PDF</span>
+                    <span>新盆法要用&nbsp;お塔婆申込PDF</span>
                   </a>
                   <a href="<?php echo get_template_directory_uri(); ?>/pdf/8月13日新盆特別法要用  お塔婆申込ＰＤＦファイル.pdf" class="c-button c-button--green" target="_blank">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
-                    <span>8月13日新盆特別法要用<br />
-                      お塔婆申込PDF</span>
+                    <span>8月13日新盆特別法要用<br />お塔婆申込PDF</span>
                   </a>
                 </div>
               </li>
@@ -96,7 +90,7 @@
                 <p>※お塔婆を6本以上お申込の方は、PDF申込用紙に記入の上、FAXにて送信してください。</p>
                 <a href="<?php echo get_template_directory_uri(); ?>/pdf/法事用  お塔婆申込ＰＤＦファイル.pdf" class="c-button c-button--green" target="_blank">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
-                  <span>法事用 お塔婆申込PDF</span>
+                  <span>法事用&nbsp;お塔婆申込PDF</span>
                 </a>
               </li>
             </ul>
@@ -126,7 +120,7 @@
         </div>
         <div class="c-contact__info-mail">
           <div class="c-contact__info-title">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコンme-runoaikonn">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコン">
             <p>メールからのお問い合わせ</p>
           </div>
           <a href="mailto:oka@iouji.com" class="c-contact__info-mail-button">

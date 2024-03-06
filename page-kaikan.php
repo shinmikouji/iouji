@@ -12,7 +12,7 @@
         <a href="<?php echo esc_url(home_url('/')); ?>">TOP</a>&nbsp;＞&nbsp;会館紹介
       </div>
       <h2 class="c-subtitle--underline p-kaikan__title" id="about">会館について</h2>
-      <p class="p-kaikan__text">地域の皆様、業者様、団体様、様々な用途に合わせ、便利にお使い いただける会館です。ホールや法要室をはじめ様々なお部屋を完備し、少人数でも大人数でもどなた様でも多目的な用途によって組み合わせ可能な使いやすい施設となっております。</p>
+      <p class="p-kaikan__text">地域の皆様、業者様、団体様、様々な用途に合わせ、便利にお使いいただける会館です。ホールや法要室をはじめ様々なお部屋を完備し、少人数でも大人数でもどなた様でも多目的な用途によって組み合わせ可能な使いやすい施設となっております。</p>
       <div class="p-kaikan__mv">
         <img src="<?php echo get_template_directory_uri(); ?>/images/kaikan/kaikan-main.jpg" alt="会館の外からの写真">
       </div>
@@ -59,8 +59,8 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/kaikan/kaikan-sp-07.jpg" alt="法要室Eの画像" class="c-display--sp">
             </div>
           </div>
-          <p class="p-kaikan-floor__text">法要室D・E
-            は、間仕切り移動可能となっており、一つの大きなお部屋としても法要だけでなく、大人数でのお食事の場としてもお使いいただけます。レンタルスペースとしてヨガ教室や各講座開催、会議や研修会施設としてもご利用いただけ、ご希望に応じて必要なお部屋を組み合わせてご利用いただけます。
+          <p class="p-kaikan-floor__text">
+            法要室D・Eは、間仕切り移動可能となっており、一つの大きなお部屋としても法要だけでなく、大人数でのお食事の場としてもお使いいただけます。レンタルスペースとしてヨガ教室や各講座開催、会議や研修会施設としてもご利用いただけ、ご希望に応じて必要なお部屋を組み合わせてご利用いただけます。<br />
             ※過去には、各種スポーツチームの打ち合わせ場所や管理栄養士のもとお食事ご提供のお部屋ご利用なども。</p>
           <div class="p-kaikan-floor-room">
             <ul>
@@ -205,7 +205,7 @@
         </div>
         <div class="c-contact__info-mail">
           <div class="c-contact__info-title">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコンme-runoaikonn">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/contact/mail.svg" alt="メールのアイコン">
             <p>メールからのお問い合わせ</p>
           </div>
           <a href="mailto:oka@iouji.com" class="c-contact__info-mail-button">
