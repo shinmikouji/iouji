@@ -22,14 +22,14 @@
         <ul>
           <li>
             <div>
-              <h3>玉川三十三観音霊場第23番札所&emsp;関東九十一薬師霊場第２番札所</h3>
+              <h3>多摩川三十三観音霊場第23番札所&emsp;関東九十一薬師霊場第２番札所</h3>
               <p>
-                後詠歌<br />
+                御詠歌<br />
                 おおまるのかんろのしみずありがたや<br />
                 まつのはしごのよとがわのてら
               </p>
             </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/info/info-01.jpg" alt="玉川三十三観音霊場第23 番札所関東九十一薬師霊場第２番札所の画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/info/info-01.jpg" alt="多摩川三十三観音霊場第23 番札所関東九十一薬師霊場第２番札所の画像">
           </li>
           <li>
             <div>
