@@ -22,6 +22,15 @@ jQuery(function ($) {
     });
   });
 
+  $(window).on("hashchange", function () {
+    if ($(".l-header__nav--sp").hasClass("active")) {
+      $(".l-header__icon").removeClass("active");
+      $(".l-header__nav--sp").removeClass("active");
+      $(".l-header").removeClass("fixed");
+      $("body").removeClass("menu-open");
+    }
+  });
+
   // ニュースのタブ
   const importantButton = $("#importantButton");
   const eventButton = $("#eventButton");
