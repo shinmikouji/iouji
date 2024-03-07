@@ -111,7 +111,7 @@
         <tbody class="table-tbody--first">
           <tr>
             <td rowspan="4" class="cell-green">1階</td>
-            <td>ホールA・控室C ※</td>
+            <td>ホールＡ・控室Ｃ ※</td>
             <td>約80席</td>
             <td>105.08㎡</td>
             <td>60,000円</td>
