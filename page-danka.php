@@ -32,7 +32,7 @@
             <h3>塔婆のみ申込</h3>
             <p>塔婆のみの申し込みは以下のメールフォームからお願いいたします。<br />
               （リンク先が表示されない場合はページを再読み込みしてください。）</p>
-            <a href="http://koumyou.sakura.ne.jp/iouji/touba/index.html" class="c-button c-button--gold">
+            <a href="http://koumyou.sakura.ne.jp/iouji/touba/index.html" class="c-button c-button--gold" target="_blank">
               <img src="<?php echo get_template_directory_uri(); ?>/images/danka/mail.svg" alt="メールのアイコン">
               <span>メールフォームから申し込む</span>
             </a>
@@ -42,7 +42,7 @@
             <ul>
               <li>
                 <h4>■メールフォームからお申し込みの方はこちら</h4>
-                <a href="mailto:oka@iouji.com" class="c-button c-button--gold">
+                <a href="http://cgi.members.interq.or.jp/king/iouji/danka/higanmail/form.htm" class="c-button c-button--gold" target="_blank">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/danka/mail.svg" alt="メールのアイコン">
                   <span>メールフォームから申し込む</span>
                 </a>
@@ -80,17 +80,9 @@
             <ul>
               <li>
                 <h4>■メールフォームからお申し込みの方はこちら</h4>
-                <a href="mailto:oka@iouji.com" class="c-button c-button--gold">
+                <a href="http://cgi.members.interq.or.jp/king/iouji/danka/houjimail/form.htm" class="c-button c-button--gold" target="_blank">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/danka/mail.svg" alt="メールのアイコン">
                   <span>メールフォームから申し込む</span>
-                </a>
-              </li>
-              <li>
-                <h4>■FAXでお申し込みの方はこちら</h4>
-                <p>※お塔婆を6本以上お申込の方は、PDF申込用紙に記入の上、FAXにて送信してください。</p>
-                <a href="<?php echo get_template_directory_uri(); ?>/pdf/法事用  お塔婆申込ＰＤＦファイル.pdf" class="c-button c-button--green" target="_blank">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/danka/download.svg" alt="ダウンロードのアイコン">
-                  <span>法事用&nbsp;お塔婆申込PDF</span>
                 </a>
               </li>
             </ul>
