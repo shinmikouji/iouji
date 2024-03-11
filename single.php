@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+<?php
+$category = get_the_category();
+$cat = $category[0];
+//カテゴリー名
+$cat_name = $cat->name;
+?>
 <main>
   <section class="p-news-detail c-bg-gray">
     <div class="c-inner">
@@ -6,8 +12,8 @@
         <a href="<?php echo esc_url(home_url('/')); ?>">TOP</a>&nbsp;＞&nbsp;お知らせ
       </div>
       <div class="p-news-detail__info">
-        <time>2024.01.01</time>
-        <label for="">重要なお知らせ</label>
+        <time><?php echo get_the_date(); ?></time>
+        <label for=""><?php echo $cat_name; ?></label>
       </div>
       <h2 class="p-news-detail__title">
         <?php the_title(); ?>
