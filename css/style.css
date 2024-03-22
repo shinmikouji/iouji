@@ -731,11 +731,11 @@ body.menu-open {
 .slider .top-swiper-slide__link {
   display: block;
   position: relative;
-  padding-top: 34.9%;
+  padding-top: 45%;
 }
 @media screen and (max-width: 959px) {
   .slider .top-swiper-slide__link {
-    padding-top: 89.3%;
+    padding-top: 139%;
   }
 }
 .slider .top-swiper-slide__link img {

@@ -17,10 +17,10 @@
   .top-swiper-slide__link {
     display: block;
     position: relative;
-    padding-top: 34.9%;
+    padding-top: 45%;
 
     @include m.mq(sp) {
-      padding-top: 89.3%;
+      padding-top: 139%;
     }
 
     img {
