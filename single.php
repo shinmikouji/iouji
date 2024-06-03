@@ -21,9 +21,30 @@ $cat_name = $cat->name;
       <div class="p-news-detail__contents">
         <p><?php the_content(); ?></p>
       </div>
-      <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-news-detail-button-archive c-button-info">
-        <span>インフォメーション一覧へ</span>
-      </a>
+      <?php
+      $prev_post = get_previous_post(); // 前の記事を取得
+      $next_post = get_next_post(); // 次の記事を取得
+      ?>
+      <?php if ($prev_post || $next_post) : ?>
+        <div class="p-news-pagination">
+          <?php if ($prev_post) : ?>
+            <div class="p-news-prev">
+              <span></span>
+              <a href="<?php echo esc_url(get_permalink($prev_post->ID)); ?>">前のタイトル</a>
+            </div>
+          <?php endif; ?>
+          <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-news-detail-button-archive">
+            <span>記事一覧へ</span>
+          </a>
+          <?php if ($next_post) : ?>
+            <div class="p-news-next">
+              <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">次のタイトル</a>
+              <span></span>
+            </div>
+          <?php endif; ?>
+        </div>
+      <?php endif; ?>
+    </div>
     </div>
   </section>
   <section class="c-contact c-contact--green">
